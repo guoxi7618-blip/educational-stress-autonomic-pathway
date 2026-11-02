@@ -1,9 +1,9 @@
-﻿Specification,n,"Stress to mediator, β",P (first stage),"Mediator to crisis, β",P (second stage),Indirect effect,95% CI,Robust CFI,Robust RMSEA,SRMR
-"Main model: laboratory lnRMSSD, composite crisis",600,-0.140,0.004,-0.114,0.004,0.025,"[0.005, 0.054]",1.000,0.000,0.041
+﻿Specification,n,"Stress to mediator, β",P (first stage),"Mediator to distress, β",P (second stage),Indirect effect,95% CI,Robust CFI,Robust RMSEA,SRMR
+"Main model: laboratory lnRMSSD, composite distress",600,-0.140,0.004,-0.114,0.004,0.025,"[0.005, 0.054]",1.000,0.000,0.041
 No auxiliaries,600,-0.136,0.005,-0.115,0.003,0.025,"[0.005, 0.054]",1.000,0.000,0.038
-"Crisis: self-report only (PHQ-9, GAD-7)",600,-0.129,0.007,-0.134,0.002,0.026,"[0.005, 0.055]",1.000,0.000,0.038
-"Crisis: clinician only (CGI-S, C-SSRS)",600,-0.139,0.005,-0.103,0.017,0.027,"[0.003, 0.063]",0.997,0.016,0.048
-Crisis: DASS-21 stress,600,-0.135,0.006,-0.119,0.018,0.026,"[0.003, 0.059]",1.000,0.005,0.040
+"Distress: self-report only (PHQ-9, GAD-7)",600,-0.129,0.007,-0.134,0.002,0.026,"[0.005, 0.055]",1.000,0.000,0.038
+"Distress: clinician only (CGI-S, C-SSRS)",600,-0.139,0.005,-0.103,0.017,0.027,"[0.003, 0.063]",0.997,0.016,0.048
+Distress: DASS-21 stress,600,-0.135,0.006,-0.119,0.018,0.026,"[0.003, 0.059]",1.000,0.005,0.040
 Mediator: high-frequency power,600,-0.122,0.011,-0.130,0.001,0.025,"[0.004, 0.054]",0.998,0.013,0.043
 Mediator: nocturnal ring lnRMSSD,600,-0.166,< 0.001,-0.130,< 0.001,0.034,"[0.014, 0.060]",0.991,0.027,0.043
 Mediator: posterior alpha (core sample),300,-0.190,< 0.001,-0.212,< 0.001,0.067,"[0.022, 0.129]",1.000,0.000,0.049
@@ -11,10 +11,10 @@ Mediator: frontal alpha asymmetry (core sample),300,-0.068,0.197,0.051,0.117,-0.
 Mediator: lnRMSSD and alpha index (core sample),300,-0.167,0.004,-0.196,< 0.001,0.056,"[0.014, 0.114]",1.000,0.000,0.050
 Mediator: recovery after the stressor (core sample),300,-0.007,0.887,0.034,0.418,0.000,"[-0.010, 0.009]",0.999,0.008,0.056
 Stress: objective load from platform logs,600,-0.014,0.683,-0.124,0.002,0.003,"[-0.010, 0.015]",0.886,0.086,0.130
-Crisis: latent factor over four waves,600,-0.129,0.007,-0.129,0.002,0.025,"[0.005, 0.054]",0.975,0.038,0.064
+Distress: latent factor over four waves,600,-0.129,0.007,-0.129,0.002,0.025,"[0.005, 0.054]",0.975,0.038,0.064
 "Within-person sleep, examination proximity and treatment regressed out",600,-0.127,0.009,-0.113,0.009,0.021,"[0.003, 0.047]",1.000,0.006,0.043
-Concurrent lnRMSSD to crisis in place of residual covariance,600,-0.140,0.004,-0.074,0.059,0.016,"[-0.0003, 0.0415]",1.000,0.000,0.041
-Concurrent stress to crisis in place of residual covariance,600,-0.140,0.004,-0.110,0.005,0.024,"[0.005, 0.051]",1.000,0.000,0.041
+Concurrent lnRMSSD to distress in place of residual covariance,600,-0.140,0.004,-0.074,0.059,0.016,"[-0.0003, 0.0415]",1.000,0.000,0.041
+Concurrent stress to distress in place of residual covariance,600,-0.140,0.004,-0.110,0.005,0.024,"[0.005, 0.051]",1.000,0.000,0.041
 Centred on cohort-by-wave means,600,-0.146,0.003,-0.113,0.005,0.026,"[0.005, 0.056]",1.000,0.000,0.040
 Centred on school-by-wave means,600,-0.143,0.004,-0.120,0.003,0.027,"[0.005, 0.057]",1.000,0.000,0.041
 Mediator: ring lnRMSSD kept only at visits with laboratory ECG,600,-0.190,< 0.001,-0.141,< 0.001,0.042,"[0.015, 0.078]",0.994,0.022,0.046
@@ -22,6 +22,6 @@ Core sample only,300,,,,,0.021,"[-0.001, 0.055]",,,
 Sex and childhood trauma on the random intercepts,600,,,,,0.024,"[0.004, 0.053]",,,
 Assessments after treatment began removed,600,,,,,0.025,"[0.004, 0.055]",,,
 Concurrent stress to lnRMSSD added,600,,,,,0.021,"[0.003, 0.047]",,,
-"Multiple imputation of crisis, no shift",600,,,,,0.025,"[0.004, 0.055]",,,
-"Multiple imputation of crisis, imputed scores raised by 0.3 SD",600,,,,,0.025,"[0.004, 0.054]",,,
-"Multiple imputation of crisis, imputed scores raised by 0.6 SD",600,,,,,0.024,"[0.004, 0.054]",,,
+"Multiple imputation of distress, no shift",600,,,,,0.025,"[0.004, 0.055]",,,
+"Multiple imputation of distress, imputed scores raised by 0.3 SD",600,,,,,0.025,"[0.004, 0.054]",,,
+"Multiple imputation of distress, imputed scores raised by 0.6 SD",600,,,,,0.024,"[0.004, 0.054]",,,

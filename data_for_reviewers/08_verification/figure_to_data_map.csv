@@ -17,14 +17,16 @@ Fig. 4c,"Bland–Altman, ring vs Polar H10",04_daily_bursts_and_devices/device_a
 Fig. 4d,"Bland–Altman, ring vs laboratory",04_daily_bursts_and_devices/device_agreement.csv,"Individual pairs are in the journal Source Data file, not in this package; summary statistics are in the listed file."
 Fig. 4e,Daily paths from the DSEM,04_daily_bursts_and_devices/dsem_parameters.csv,
 Fig. 5a,BIC of the profile solutions,05_profiles_and_states/lpa_fit.csv,
-Fig. 5b,Crisis score by profile,05_profiles_and_states/profile_crisis_by_wave.csv,
+Fig. 5b,Distress score by profile,05_profiles_and_states/profile_distress_by_wave.csv,
 Fig. 5c,Bias-corrected means by profile,05_profiles_and_states/bch_means.csv; 05_profiles_and_states/bch_contrasts.csv,
-Fig. 5d,BIC of the transition models,05_profiles_and_states/rilta_fit.csv,
-Fig. 5e,Transition probabilities,05_profiles_and_states/rilta_transitions.csv,
-Fig. 5f,State prevalence by wave,05_profiles_and_states/rilta_prevalence.csv,
+Supplementary Fig. 1a,BIC of the transition models,05_profiles_and_states/rilta_fit.csv,
+Supplementary Fig. 1b,Transition probabilities,05_profiles_and_states/rilta_transitions.csv,
+Supplementary Fig. 1c,State prevalence by wave,05_profiles_and_states/rilta_prevalence.csv,
 Fig. 6a,Change in AUC,06_prediction/prediction_performance.csv,
 Fig. 6b,Calibration in deciles,06_prediction/calibration_deciles.csv,Recomputed with the stored analysis design; the slope and intercept reproduce the stored output.
 Fig. 6c,Net benefit,06_prediction/net_benefit.csv,
 Fig. 6d,Mean absolute Shapley values,06_prediction/feature_contributions.csv,
 Table 1,Baseline characteristics,01_participants/participant_characteristics.csv,
 Table 2,Confirmatory tests,03_within_person_panel/confirmatory_tests.csv,
+Supplementary Table 13,Internal-external validation,06_prediction/internal_external_validation.csv,Added after the primary analyses; exploratory.
+Supplementary Table 14,Composite structure by wave,Computed from scale_scores and clinician_assessment,Record-level tables are under controlled access.

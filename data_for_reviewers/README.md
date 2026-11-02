@@ -1,4 +1,4 @@
-# Data package: Within-person autonomic pathways link educational stress to subclinical crisis in university students
+# Data package: Within-person autonomic pathways link educational stress to subclinical psychological distress in university students
 
 This package holds the summary-level data behind the numbers reported in the manuscript. It also documents the record-level tables from which these numbers were computed. Each summary file is described column by column in `09_codebook/codebook_summary_tables.csv`. Each record-level table is described variable by variable in `09_codebook/codebook_record_level_tables.csv`.
 
@@ -9,7 +9,7 @@ This package holds the summary-level data behind the numbers reported in the man
 | Design              | Four-wave panel at months 0, 2, 4 and 6 with two start cohorts in three universities              |
 | Screened / eligible | 2,000 screened; 1,807 eligible; 1,132 eligible and consented                                      |
 | Enrolled            | 600 (core 300, extended 300), sampled with stratification on year of study, sex and stress level  |
-| Retained            | T0, T1, T2, T3: 600 / 553 / 521 / 498                                                             |
+| Assessed            | T0, T1, T2, T3: 600 / 553 / 521 / 498                                                             |
 | Laboratory ECG      | Lead II, 1,000 Hz; core sample at all waves, extended sample at T0 and T3 (1,625 sessions)        |
 | Laboratory EEG      | Core sample; 32 active electrodes, 1,000 Hz, eyes open and closed (1,072 sessions)                |
 | Bursts              | 14 days after each wave: ring, three momentary prompts per day, smartphone sensing (2,172 bursts) |
@@ -25,11 +25,11 @@ This package holds the summary-level data behind the numbers reported in the man
 
 - **Waves:** T0, T1, T2 and T3 are months 0, 2, 4 and 6. The record-level `wave` variable codes them 0 to 3.
 
-- **Composites:** educational stress is the mean of the standardized academic stress, employment anxiety and interpersonal stress scales. Subclinical crisis is the mean of the standardized PHQ-9, GAD-7, CGI-S and C-SSRS ideation intensity scores. All are standardized on baseline values. lnRMSSD is resting laboratory lnRMSSD unless stated.
+- **Composites:** educational stress is the mean of the standardized academic stress, employment anxiety and interpersonal stress scales. Subclinical psychological distress is the mean of the standardized PHQ-9, GAD-7, CGI-S and C-SSRS ideation intensity scores. All are standardized on baseline values. lnRMSSD is resting laboratory lnRMSSD unless stated.
 
 - **Estimates:** β is the standardized within-person lag averaged over waves. Indirect effects are unstandardized a × b with Monte Carlo 95% CIs from 20,000 draws. Daily paths are posterior medians with 95% credible intervals.
 
-- **Profiles and states:** P1 to P5 are numbered from lowest to highest crisis at T3. S1 to S5 are ordered from least to most severe. Transition intervals from S4 and S5 are close to the [0, 1] bounds and are poorly determined.
+- **Profiles and states:** P1 to P5 are numbered from lowest to highest distress at T3. S1 to S5 are ordered from least to most severe. Transition intervals from S4 and S5 are close to the [0, 1] bounds and are poorly determined.
 
 ## 3. File inventory
 
@@ -39,7 +39,7 @@ This package holds the summary-level data behind the numbers reported in the man
 | --------------------------------- | ------------------------------------------------------------- | ---------------------------- |
 | `enrolment_flow.csv`              | Screening and enrolment counts (2,000 / 1,807 / 1,132 / 600)  | Results (Retention); Fig. 1c |
 | `participant_characteristics.csv` | Baseline characteristics, total and by core / extended sample | Table 1                      |
-| `retention_by_wave.csv`           | Participants retained at each wave (600 / 553 / 521 / 498)    | Results (Retention); Fig. 1c |
+| `retention_by_wave.csv`           | Participants assessed at each wave (600 / 553 / 521 / 498)    | Results (Retention); Fig. 1c |
 | `dropout_model.csv`               | Logistic model of not completing T3 (recomputed)              | Results (Retention)          |
 
 ### 02_descriptives_and_quality
@@ -89,28 +89,29 @@ This package holds the summary-level data behind the numbers reported in the man
 
 | File                          | Content                                                                            | Manuscript                           |
 | ----------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------ |
-| `profile_composition.csv`     | Five-profile solution: size, crisis score by wave, severe-state share (recomputed) | Results (Temporal profiles); Fig. 5b |
-| `profile_crisis_by_wave.csv`  | Mean crisis score with 95% CI by profile and wave                                  | Fig. 5b                              |
+| `profile_composition.csv`     | Five-profile solution: size, distress score by wave, severe-state share (recomputed) | Results (Temporal profiles); Fig. 5b |
+| `profile_distress_by_wave.csv`  | Mean distress score with 95% CI by profile and wave                                  | Fig. 5b                              |
 | `lpa_fit.csv`                 | Latent profile enumeration, one to six classes                                     | Results (Temporal profiles); Fig. 5a |
 | `lcga_fit.csv`                | Growth-based enumeration                                                           | Results (Temporal profiles)          |
 | `three_profile_solution.csv`  | Class sizes in the three-profile solution                                          | Results (Temporal profiles)          |
 | `three_profile_bch_means.csv` | Bias-corrected means in the three-profile solution                                 | Results (Temporal profiles)          |
 | `bch_means.csv`               | Bias-corrected three-step means by profile                                         | Results (Temporal profiles); Fig. 5c |
 | `bch_contrasts.csv`           | Escalating against stable low profile                                              | Results (Temporal profiles); Fig. 5c |
-| `rilta_fit.csv`               | Latent transition enumeration with and without a random intercept                  | Results (Temporal profiles); Fig. 5d |
+| `rilta_fit.csv`               | Latent transition enumeration with and without a random intercept                  | Results (Temporal profiles); Supplementary Fig. 1a |
 | `rilta_state_means.csv`       | Indicator values in each of the five states                                        | Results (Temporal profiles)          |
 | `rilta_loadings.csv`          | Random-intercept loadings of the five-state model                                  | Methods; Results (Temporal profiles) |
-| `rilta_transitions.csv`       | Transition probabilities between consecutive waves                                 | Results (Temporal profiles); Fig. 5e |
-| `rilta_prevalence.csv`        | State prevalence at each wave                                                      | Results (Temporal profiles); Fig. 5f |
+| `rilta_transitions.csv`       | Transition probabilities between consecutive waves                                 | Results (Temporal profiles); Supplementary Fig. 1b |
+| `rilta_prevalence.csv`        | State prevalence at each wave                                                      | Results (Temporal profiles); Supplementary Fig. 1c |
 
 ### 06_prediction
 
 | File                         | Content                                                                  | Manuscript                           |
 | ---------------------------- | ------------------------------------------------------------------------ | ------------------------------------ |
-| `prediction_performance.csv` | Out-of-sample prediction of the subclinical state at the next wave       | Results (Passive sensing); Fig. 6a,b |
+| `prediction_performance.csv` | Out-of-sample prediction of the above-threshold state at the next wave       | Results (Passive sensing); Fig. 6a,b |
 | `net_benefit.csv`            | Net benefit across risk thresholds                                       | Results (Passive sensing); Fig. 6c   |
 | `feature_contributions.csv`  | Exact Shapley values for the linear model with all features              | Results (Passive sensing); Fig. 6d   |
 | `calibration_deciles.csv`    | Calibration of the model with all features, in deciles of predicted risk | Fig. 6b                              |
+| `internal_external_validation.csv` | Models refitted with one school or start cohort held out (exploratory) | Results (Passive sensing); Supplementary Table 13 |
 
 ### 07_safety
 
@@ -143,7 +144,7 @@ This package holds the summary-level data behind the numbers reported in the man
 | Table 1                                                                 | `01_participants/participant_characteristics.csv`                     |
 | 95.5% of ECG and 96.5% of EEG sessions valid; ring 68.9%; prompts 64.1% | `02_descriptives_and_quality/data_quality.csv`                        |
 | RI-CLPM fit: χ²(51) = 56.4, BIC 22,850.3                                | `03_within_person_panel/model_fit.csv`                                |
-| Stress to lnRMSSD β = −0.14; lnRMSSD to crisis β = −0.11                | `03_within_person_panel/riclpm_nine_paths.csv`                        |
+| Stress to lnRMSSD β = −0.14; lnRMSSD to distress β = −0.11                | `03_within_person_panel/riclpm_nine_paths.csv`                        |
 | Indirect effect 0.025 [0.005, 0.054]; Holm-adjusted P (Table 2)         | `03_within_person_panel/confirmatory_tests.csv`                       |
 | Indirect effect across specifications (Fig. 3a)                         | `03_within_person_panel/indirect_effect_robustness.csv`               |
 | Appraisal interaction 0.130; IMM −0.018 [−0.037, −0.003]                | `03_within_person_panel/moderation_tests.csv`                         |
@@ -164,7 +165,7 @@ This package holds the summary-level data behind the numbers reported in the man
 
 The summary values were computed from the 14 record-level tables listed in `09_codebook/record_level_tables.csv`. These tables cover screening, participants, questionnaire items and scores, clinician ratings, laboratory ECG and EEG, nocturnal ring and chest-strap recordings, momentary prompts, smartphone sensing, platform logs and safety events. They are not included in this package.
 
-Access follows the manuscript's Data availability statement: processed feature-level data are to be deposited at [GitHub repository URL to be inserted], and raw physiological recordings and restricted variables are available from the corresponding author on reasonable request. This package itself holds summary-level data only.
+Access follows the manuscript's Data availability statement: processed feature-level data are to be deposited at https://github.com/guoxi7618-blip/educational-stress-autonomic-pathway, and raw physiological recordings and restricted variables are available from the corresponding author on reasonable request. This package itself holds summary-level data only.
 
 The record-level tables contain information that requires controlled access:
 

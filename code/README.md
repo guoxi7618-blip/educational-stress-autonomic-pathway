@@ -21,6 +21,7 @@ analysis/supplement_models.R   设计要求的补充分析（Holm、替代模型
 analysis/dsem_burst.py         burst 数据的贝叶斯 DSEM（NumPyro）
 analysis/ri_lta.py             随机截距潜转变分析 RI-LTA（JAX）
 analysis/supplement_prediction.py  校准、净获益、SHAP、次要结局、流程与依从性
+analysis/internal_external_validation.py  留一校和留一批次验证（探索性）
 analysis/lab_capacity.py       实验室产能核算
 preprocessing/safety_monitor.py    三源风险触发清单
 preprocessing/export_bids.py   EEG 导出为 BIDS

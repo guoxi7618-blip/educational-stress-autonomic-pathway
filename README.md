@@ -1,4 +1,4 @@
-# Within-person autonomic pathways link educational stress to subclinical crisis in university students
+# Within-person autonomic pathways link educational stress to subclinical psychological distress in university students
 
 Code, summary-level data and figure source data for the manuscript of the same title.
 
@@ -9,7 +9,7 @@ Code, summary-level data and figure source data for the manuscript of the same t
 | `code/` | Acquisition, preprocessing, analysis and figure code. See `code/README.md`. |
 | `data_for_reviewers/` | Summary-level results, codebooks and manuscript verification tables. See `data_for_reviewers/README.md`. |
 | `source_data/` | `Source_Data.xlsx`, the data behind each table and figure panel. |
-| `figures/` | Fig. 1–6 as vector PDF. |
+| `figures/` | Fig. 1–6 and Supplementary Fig. 1 as vector PDF. |
 
 ## Reproduce the figures
 
@@ -19,6 +19,10 @@ python code/figures/make_figures.py
 ```
 
 The script reads `source_data/Source_Data.xlsx` and `data_for_reviewers/` and writes PDF, PNG and an editable PowerPoint deck to `figures/`. It uses the Arial font.
+
+## Names used in the code
+
+Analysis scripts and `code/export_data_for_reviewers.py` keep earlier working names: `crisis` or `Y` is subclinical psychological distress in the manuscript, and `subclinical state` is the above-threshold state. Running the export script writes those earlier names to its output.
 
 ## Data not in this repository
 

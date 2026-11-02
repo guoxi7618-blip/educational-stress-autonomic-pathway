@@ -96,7 +96,7 @@
 03_within_person_panel/indirect_effect_robustness.csv,n,Participants in the model.
 03_within_person_panel/indirect_effect_robustness.csv,"Stress to mediator, β",Standardized first-stage lag.
 03_within_person_panel/indirect_effect_robustness.csv,P (first stage),P value of the first-stage lag.
-03_within_person_panel/indirect_effect_robustness.csv,"Mediator to crisis, β",Standardized second-stage lag.
+03_within_person_panel/indirect_effect_robustness.csv,"Mediator to distress, β",Standardized second-stage lag.
 03_within_person_panel/indirect_effect_robustness.csv,P (second stage),P value of the second-stage lag.
 03_within_person_panel/indirect_effect_robustness.csv,Indirect effect,Unstandardized a × b.
 03_within_person_panel/indirect_effect_robustness.csv,95% CI,Monte Carlo 95% CI of the indirect effect.
@@ -124,9 +124,9 @@
 03_within_person_panel/multigroup_tests.csv,"P, group 0 (first stage)",P value.
 03_within_person_panel/multigroup_tests.csv,"Stress to lnRMSSD b, group 1",Unstandardized first-stage lag.
 03_within_person_panel/multigroup_tests.csv,"P, group 1 (first stage)",P value.
-03_within_person_panel/multigroup_tests.csv,"lnRMSSD to crisis b, group 0",Unstandardized second-stage lag.
+03_within_person_panel/multigroup_tests.csv,"lnRMSSD to distress b, group 0",Unstandardized second-stage lag.
 03_within_person_panel/multigroup_tests.csv,"P, group 0 (second stage)",P value.
-03_within_person_panel/multigroup_tests.csv,"lnRMSSD to crisis b, group 1",Unstandardized second-stage lag.
+03_within_person_panel/multigroup_tests.csv,"lnRMSSD to distress b, group 1",Unstandardized second-stage lag.
 03_within_person_panel/multigroup_tests.csv,"P, group 1 (second stage)",P value.
 03_within_person_panel/multigroup_tests.csv,Equality test P,Likelihood-ratio test of equal focal paths across groups.
 03_within_person_panel/parallel_mediators.csv,Quantity,Indirect effect or their difference.
@@ -175,20 +175,20 @@
 04_daily_bursts_and_devices/daily_coupling_bins.csv,Predictor mean,Mean predictor value in the bin.
 04_daily_bursts_and_devices/daily_coupling_bins.csv,Outcome mean,Mean outcome value in the bin.
 04_daily_bursts_and_devices/daily_coupling_bins.csv,95% CI,t-based 95% CI of the outcome mean; it ignores clustering within person.
-05_profiles_and_states/profile_composition.csv,Profile,"Profile, numbered from lowest to highest crisis at T3."
+05_profiles_and_states/profile_composition.csv,Profile,"Profile, numbered from lowest to highest distress at T3."
 05_profiles_and_states/profile_composition.csv,Label,Descriptive label.
 05_profiles_and_states/profile_composition.csv,n,Students assigned (507 with complete indicators).
 05_profiles_and_states/profile_composition.csv,%,Percentage of the 507 students.
-05_profiles_and_states/profile_composition.csv,"Crisis T0, M (SD)","Composite crisis score at T0, mean (SD) among attendees."
-05_profiles_and_states/profile_composition.csv,"Crisis T1, M (SD)","Composite crisis score at T1, mean (SD) among attendees."
-05_profiles_and_states/profile_composition.csv,"Crisis T2, M (SD)","Composite crisis score at T2, mean (SD) among attendees."
-05_profiles_and_states/profile_composition.csv,"Crisis T3, M (SD)","Composite crisis score at T3, mean (SD) among attendees."
+05_profiles_and_states/profile_composition.csv,"Distress T0, M (SD)","Composite distress score at T0, mean (SD) among attendees."
+05_profiles_and_states/profile_composition.csv,"Distress T1, M (SD)","Composite distress score at T1, mean (SD) among attendees."
+05_profiles_and_states/profile_composition.csv,"Distress T2, M (SD)","Composite distress score at T2, mean (SD) among attendees."
+05_profiles_and_states/profile_composition.csv,"Distress T3, M (SD)","Composite distress score at T3, mean (SD) among attendees."
 05_profiles_and_states/profile_composition.csv,"Waves in states S4–S5, %",Percentage of the profile's person-waves in the two most severe latent states.
-05_profiles_and_states/profile_crisis_by_wave.csv,Profile,Profile.
-05_profiles_and_states/profile_crisis_by_wave.csv,Wave,Assessment wave.
-05_profiles_and_states/profile_crisis_by_wave.csv,n,Students with a crisis score at that wave.
-05_profiles_and_states/profile_crisis_by_wave.csv,"Crisis, mean",Mean composite crisis score.
-05_profiles_and_states/profile_crisis_by_wave.csv,95% CI,t-based 95% CI of the mean.
+05_profiles_and_states/profile_distress_by_wave.csv,Profile,Profile.
+05_profiles_and_states/profile_distress_by_wave.csv,Wave,Assessment wave.
+05_profiles_and_states/profile_distress_by_wave.csv,n,Students with a distress score at that wave.
+05_profiles_and_states/profile_distress_by_wave.csv,"Distress, mean",Mean composite distress score.
+05_profiles_and_states/profile_distress_by_wave.csv,95% CI,t-based 95% CI of the mean.
 05_profiles_and_states/lpa_fit.csv,Indicators,Indicator set.
 05_profiles_and_states/lpa_fit.csv,Classes,Number of classes.
 05_profiles_and_states/lpa_fit.csv,Log-likelihood,Log-likelihood.
@@ -204,11 +204,11 @@
 05_profiles_and_states/three_profile_solution.csv,Class,"Class, largest first."
 05_profiles_and_states/three_profile_solution.csv,n,Students assigned.
 05_profiles_and_states/three_profile_solution.csv,%,Percentage of the 507 students.
-05_profiles_and_states/three_profile_bch_means.csv,Variable (z score),"Baseline variable, or crisis at T3 (descriptive), z score."
+05_profiles_and_states/three_profile_bch_means.csv,Variable (z score),"Baseline variable, or distress at T3 (descriptive), z score."
 05_profiles_and_states/three_profile_bch_means.csv,Low mean (n = 212),Bias-corrected mean in the low group.
 05_profiles_and_states/three_profile_bch_means.csv,Intermediate mean (n = 210),Bias-corrected mean in the intermediate group.
 05_profiles_and_states/three_profile_bch_means.csv,High mean (n = 85),Bias-corrected mean in the high group.
-05_profiles_and_states/bch_means.csv,Variable (z score),"Baseline variable, z score. Crisis at T3 is descriptive and was not tested."
+05_profiles_and_states/bch_means.csv,Variable (z score),"Baseline variable, z score. Distress at T3 is descriptive and was not tested."
 05_profiles_and_states/bch_means.csv,P1 mean,Bias-corrected mean in profile P1.
 05_profiles_and_states/bch_means.csv,P2 mean,Bias-corrected mean in profile P2.
 05_profiles_and_states/bch_means.csv,P3 mean,Bias-corrected mean in profile P3.
@@ -250,7 +250,7 @@
 06_prediction/prediction_performance.csv,Population,"All transitions, or transitions from below threshold."
 06_prediction/prediction_performance.csv,Model,Feature set.
 06_prediction/prediction_performance.csv,n,Transitions.
-06_prediction/prediction_performance.csv,Events,Transitions into the subclinical state.
+06_prediction/prediction_performance.csv,Events,Transitions into the above-threshold state.
 06_prediction/prediction_performance.csv,AUC,"Area under the curve, mean over 10 repeats of 5-fold person-grouped cross-validation."
 06_prediction/prediction_performance.csv,Brier score,Brier score.
 06_prediction/prediction_performance.csv,Calibration intercept,Logistic recalibration intercept.
@@ -268,7 +268,7 @@
 06_prediction/calibration_deciles.csv,Decile,"Decile of cross-validated predicted risk, averaged over 10 repeats."
 06_prediction/calibration_deciles.csv,n,Transitions in the decile.
 06_prediction/calibration_deciles.csv,Mean predicted risk,Mean predicted risk.
-06_prediction/calibration_deciles.csv,Observed proportion,Observed proportion in the subclinical state at the next wave.
+06_prediction/calibration_deciles.csv,Observed proportion,Observed proportion in the above-threshold state at the next wave.
 06_prediction/calibration_deciles.csv,95% CI,Wilson 95% CI of the observed proportion.
 07_safety/safety_events_summary.csv,Indicator,Safety indicator.
 07_safety/safety_events_summary.csv,Value,"Count, count of total, count (%) or median. Taken from the safety_events records as confirmed by the authors; source documents were not inspected in this check."

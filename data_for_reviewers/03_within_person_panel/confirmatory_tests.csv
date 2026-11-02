@@ -1,6 +1,6 @@
 ﻿Hypothesis,Estimate,95% CI,P,Holm-adjusted P
 H1 Stress to lnRMSSD,β = -0.140,"[-0.235, -0.045]",0.0039,0.0195
-H2 lnRMSSD to crisis,β = -0.114,"[-0.193, -0.034]",0.0043,0.0195
+H2 lnRMSSD to distress,β = -0.114,"[-0.193, -0.034]",0.0043,0.0195
 H3 Indirect effect,0.025,"[0.005, 0.054]",0.0073,0.0219
 H4a Appraisal × stress to lnRMSSD,b = 0.130,"IMM -0.018 [-0.037, -0.003]",0.0096,0.0219
-H4b Emotion regulation × lnRMSSD to crisis,b = 0.078,"IMM -0.014 [-0.040, 0.004]",0.1343,0.1343
+H4b Emotion regulation × lnRMSSD to distress,b = 0.078,"IMM -0.014 [-0.040, 0.004]",0.1343,0.1343

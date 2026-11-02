@@ -2,6 +2,6 @@
 Stress to lnRMSSD,-1,-0.319,< 0.001
 Stress to lnRMSSD,0,-0.189,0.003
 Stress to lnRMSSD,1,-0.058,0.455
-lnRMSSD to crisis,-1,-0.215,0.006
-lnRMSSD to crisis,0,-0.138,0.005
-lnRMSSD to crisis,1,-0.060,0.349
+lnRMSSD to distress,-1,-0.215,0.006
+lnRMSSD to distress,0,-0.138,0.005
+lnRMSSD to distress,1,-0.060,0.349

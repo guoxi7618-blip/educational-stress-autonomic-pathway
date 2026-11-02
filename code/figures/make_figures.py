@@ -32,8 +32,8 @@ from lxml import etree
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 SUB = os.path.join(ROOT, "投稿稿件")
-SOURCE = os.path.join(SUB, "NC_submission", "06_Source_Data.xlsx")
-OUT = os.path.join(SUB, "NC_submission", "04_Figures")
+SOURCE = os.path.join(SUB, "第四篇终稿", "06_Source_Data.xlsx")
+OUT = os.path.join(SUB, "第四篇终稿", "04_Figures")
 PANELS = os.path.join(SUB, "figures", "panels")
 if not os.path.exists(SOURCE):  # layout of the public repository
     SOURCE = os.path.join(ROOT, "source_data", "Source_Data.xlsx")
@@ -258,7 +258,7 @@ def fig1():
         if i < 3:
             s.arrow(x + 1.43, 0.4, x + 1.80, 0.4)
         x += 1.823
-    s.text(L, 0.65, "Each visit: 5 min adaptation → 5 min resting ECG → 8 min resting EEG (eyes open and closed, random order) → 5 min serial subtraction →\n5 min recovery → questionnaires → blinded clinician interview", size=5.8, color=GREY)
+    s.text(L, 0.65, "Core-sample visit: 5 min adaptation → 5 min resting ECG → 8 min resting EEG (eyes open and closed, random order) → 5 min serial subtraction →\n5 min recovery → questionnaires → blinded clinician interview", size=5.8, color=GREY)
 
     s.letter("b", 0, 1.03)
     cols = [(L, 1.55), (L + 1.58, 2.62), (L + 4.23, 1.31), (L + 5.57, 1.31)]
@@ -298,7 +298,7 @@ def fig1():
     yy, hh = 4.3, 0.56
     s.box(L, yy, 1.1, hh, "Educational stress\nacademic, employment,\ninterpersonal (t)", fill=T_STRESS, bold_first=True, size=6)
     s.box(L + 1.72, yy, 0.98, hh, "Autonomic state\nlnRMSSD (t + 1)", fill=T_AUTO, bold_first=True, size=6)
-    s.box(L + 3.32, yy, 0.98, hh, "Subclinical crisis\ncomposite (t + 2)", fill=T_CRISIS, bold_first=True, size=6)
+    s.box(L + 3.32, yy, 0.98, hh, "Subclinical distress\ncomposite (t + 2)", fill=T_CRISIS, bold_first=True, size=6)
     s.arrow(L + 1.12, yy + hh / 2, L + 1.70, yy + hh / 2, color=INK, lw=1.3)
     s.arrow(L + 2.72, yy + hh / 2, L + 3.30, yy + hh / 2, color=INK, lw=1.3)
     s.text(L + 1.41, yy + hh / 2 + 0.05, "H1", size=6.5, ha="center", bold=True)
@@ -334,15 +334,15 @@ def fig1():
 def fig2():
     s = Scene("Fig2", 4.5)
     paths = {r["Path"]: r for r in sheet("Fig 2a,b")}
-    code = {"Stress": "S", "lnRMSSD": "H", "Crisis": "C"}
+    code = {"Stress": "S", "lnRMSSD": "H", "Distress": "D"}
 
     def beta(a, b):
         return paths[f"{a} to {b}"]["Standardized β"]
 
     s.letter("a", 0, 0)
     xl, xr, nw, nh = 0.62, 2.62, 0.62, 0.34
-    ys = {"Stress": 0.3, "lnRMSSD": 0.95, "Crisis": 1.6}
-    tints = {"Stress": T_STRESS, "lnRMSSD": T_AUTO, "Crisis": T_CRISIS}
+    ys = {"Stress": 0.3, "lnRMSSD": 0.95, "Distress": 1.6}
+    tints = {"Stress": T_STRESS, "lnRMSSD": T_AUTO, "Distress": T_CRISIS}
     for k, y in ys.items():
         s.text(xl - 0.06, y + nh / 2, k, size=6, ha="right", va="center", color=GREY)
         s.box(xl, y, nw, nh, f"{code[k]} (t)", fill=tints[k], bold=True, size=6.5)
@@ -359,18 +359,18 @@ def fig2():
 
     for k in ys:
         line(k, k, 0.2)
-    line("Stress", "Crisis", 0.33, off=0.04)
-    line("Crisis", "Stress", 0.82, dash=True, off=-0.04)
-    line("Crisis", "lnRMSSD", 0.78, dash=True, off=-0.08)
+    line("Stress", "Distress", 0.33, off=0.04)
+    line("Distress", "Stress", 0.82, dash=True, off=-0.04)
+    line("Distress", "lnRMSSD", 0.78, dash=True, off=-0.08)
     line("lnRMSSD", "Stress", 0.5, dash=True, off=-0.08)
     line("Stress", "lnRMSSD", 0.2, color=BLUE, lw=1.5, label_color=BLUE, off=0.07, bold=True)
-    line("lnRMSSD", "Crisis", 0.2, color=BLUE, lw=1.5, label_color=BLUE, off=0.07, bold=True)
+    line("lnRMSSD", "Distress", 0.2, color=BLUE, lw=1.5, label_color=BLUE, off=0.07, bold=True)
     for xt, yt, v, c_, bold_ in labels:
         s.box(xt - 0.13, yt - 0.05, 0.26, 0.1, v, fill="white", color=c_, size=5.8, bold=bold_, round_=False)
 
     def b(ax):
-        order = ["Stress to lnRMSSD", "lnRMSSD to Crisis", "Stress to Crisis", "Crisis to Stress", "Crisis to lnRMSSD",
-                 "lnRMSSD to Stress", "Stress to Stress", "lnRMSSD to lnRMSSD", "Crisis to Crisis"]
+        order = ["Stress to lnRMSSD", "lnRMSSD to Distress", "Stress to Distress", "Distress to Stress", "Distress to lnRMSSD",
+                 "lnRMSSD to Stress", "Stress to Stress", "lnRMSSD to lnRMSSD", "Distress to Distress"]
         rows = []
         for o in order:
             r = paths[o]
@@ -383,7 +383,7 @@ def fig2():
 
     def c(ax):
         rows = sheet("Fig 2c")
-        order = ["Stress to lnRMSSD", "lnRMSSD to Crisis", "Stress to Crisis", "Crisis to Stress", "Crisis to lnRMSSD", "lnRMSSD to Stress"]
+        order = ["Stress to lnRMSSD", "lnRMSSD to Distress", "Stress to Distress", "Distress to Stress", "Distress to lnRMSSD", "lnRMSSD to Stress"]
         for i, o in enumerate(order):
             for m, color, dy in [("Traditional cross-lagged model", MID, -0.17), ("RI-CLPM, main", BLUE, 0.17)]:
                 r = [x for x in rows if x["Model"] == m and x["Path"] == o][0]
@@ -403,7 +403,7 @@ def fig2():
 
     def d(ax):
         rows = {r["Pair"]: r for r in sheet("Fig 2d")}
-        order = ["Stress – lnRMSSD", "lnRMSSD – Crisis", "Stress – Crisis"]
+        order = ["Stress – lnRMSSD", "lnRMSSD – Distress", "Stress – Distress"]
         xs = np.arange(3); w = 0.36
         ax.bar(xs - w / 2, [rows[o]["Between persons, r"] for o in order], w * 0.95, color=ORANGE, label="Between persons")
         ax.bar(xs + w / 2, [rows[o]["Within persons, r"] for o in order], w * 0.95, color=BLUE, label="Within persons")
@@ -413,7 +413,7 @@ def fig2():
                 ax.text(i + dx, v + (0.012 if v > 0 else -0.012), num(v), ha="center",
                         va="bottom" if v > 0 else "top", fontsize=5.5)
         ax.axhline(0, color=GREY, lw=0.6)
-        ax.set_xticks(xs); ax.set_xticklabels(["S – H", "H – C", "S – C"]); ax.tick_params(axis="x", length=0)
+        ax.set_xticks(xs); ax.set_xticklabels(["S – H", "H – D", "S – D"]); ax.tick_params(axis="x", length=0)
         ax.set_ylabel("Pearson r"); ax.set_ylim(-0.24, 0.4); ax.spines["bottom"].set_visible(False)
         ax.legend(loc="upper left", handlelength=1, borderaxespad=0.1, labelspacing=0.3)
     s.letter("d", 3.55, 2.32)
@@ -432,12 +432,12 @@ def fig3():
 
     rows = [
         ("Main model", None, None, None, None),
-        row("Laboratory lnRMSSD, composite crisis", "Main model: laboratory lnRMSSD, composite crisis", BLUE),
+        row("Laboratory lnRMSSD, composite distress", "Main model: laboratory lnRMSSD, composite distress", BLUE),
         ("Outcome", None, None, None, None),
-        row("Self-report only", "Crisis: self-report only (PHQ-9, GAD-7)"),
-        row("Clinician only", "Crisis: clinician only (CGI-S, C-SSRS)"),
-        row("Latent factor", "Crisis: latent factor over four waves"),
-        row("DASS-21 stress", "Crisis: DASS-21 stress"),
+        row("Self-report only", "Distress: self-report only (PHQ-9, GAD-7)"),
+        row("Clinician only", "Distress: clinician only (CGI-S, C-SSRS)"),
+        row("Latent factor", "Distress: latent factor over four waves"),
+        row("DASS-21 stress", "Distress: DASS-21 stress"),
         ("Mediator or predictor", None, None, None, None),
         row("High-frequency power", "Mediator: high-frequency power"),
         row("Nocturnal ring lnRMSSD", "Mediator: nocturnal ring lnRMSSD"),
@@ -451,13 +451,13 @@ def fig3():
         row("Cohort-by-wave centred", "Centred on cohort-by-wave means"),
         row("School-by-wave centred", "Centred on school-by-wave means"),
         ("Concurrent effects", None, None, None, None),
-        row("lnRMSSD → crisis", "Concurrent lnRMSSD to crisis in place of residual covariance"),
-        row("Stress → crisis", "Concurrent stress to crisis in place of residual covariance"),
+        row("lnRMSSD → distress", "Concurrent lnRMSSD to distress in place of residual covariance"),
+        row("Stress → distress", "Concurrent stress to distress in place of residual covariance"),
         row("Stress → lnRMSSD", "Concurrent stress to lnRMSSD added"),
-        ("Missing crisis scores imputed", None, None, None, None),
-        row("No shift", "Multiple imputation of crisis, no shift"),
-        row("Imputed scores +0.3 SD", "Multiple imputation of crisis, imputed scores raised by 0.3 SD"),
-        row("Imputed scores +0.6 SD", "Multiple imputation of crisis, imputed scores raised by 0.6 SD"),
+        ("Missing distress scores imputed", None, None, None, None),
+        row("No shift", "Multiple imputation of distress, no shift"),
+        row("Imputed scores +0.3 SD", "Multiple imputation of distress, imputed scores raised by 0.3 SD"),
+        row("Imputed scores +0.6 SD", "Multiple imputation of distress, imputed scores raised by 0.6 SD"),
         ("Core sample (n = 300)", None, None, None, None),
         row("lnRMSSD", "Core sample only", ORANGE),
         row("Posterior alpha", "Mediator: posterior alpha (core sample)", ORANGE),
@@ -494,7 +494,7 @@ def fig3():
     s.letter("b", 4.55, 0)
     s.panel("fig3b", 4.55, 0, 2.537, 2.2, 0.5, 0.08, 0.08, 0.36, simple("Stress to lnRMSSD", "Challenge appraisal and mindset (SD)", BLUE))
     s.letter("c", 4.55, 2.28)
-    s.panel("fig3c", 4.55, 2.28, 2.537, 2.2, 0.5, 0.08, 0.08, 0.36, simple("lnRMSSD to crisis", "Emotion regulation (SD)", GREY))
+    s.panel("fig3c", 4.55, 2.28, 2.537, 2.2, 0.5, 0.08, 0.08, 0.36, simple("lnRMSSD to distress", "Emotion regulation (SD)", GREY))
     return s
 
 
@@ -578,7 +578,7 @@ def fig4():
 
 # ---------------------------------------------------------------- Fig. 5
 def fig5():
-    s = Scene("Fig5", 4.15)
+    s = Scene("Fig5", 2.05)
 
     def bic(name, kcol, gcol, groups, xlabel, ylim):
         rows = sheet(name)
@@ -597,7 +597,7 @@ def fig5():
         names = {"P1": "P1 stable low", "P2": "P2 improving", "P3": "P3 slow rise", "P4": "P4 elevated", "P5": "P5 escalating"}
         for p in ["P1", "P2", "P3", "P4", "P5"]:
             rr = [r for r in rows if r["Profile"] == p]
-            y = [r["Crisis, mean"] for r in rr]
+            y = [r["Distress, mean"] for r in rr]
             ax.plot(range(4), y, "-", color=PROFILE[p], lw=1.0)
             for i, r in enumerate(rr):
                 lo, hi = ci(r["95% CI"])
@@ -605,7 +605,7 @@ def fig5():
             ax.plot(range(4), y, "o", ms=2.8, color=PROFILE[p], mec="white", mew=0.3)
         for p, yy in [("P5", 1.57), ("P4", 0.62), ("P3", -0.13), ("P2", -0.52), ("P1", -0.83)]:
             ax.text(3.08, yy, names[p], color=PROFILE[p], fontsize=5.6, va="center")
-        ax.set_xlim(-0.2, 4.35); ax.set_xticks(range(4)); ax.set_xticklabels(waves); ax.set_ylabel("Composite crisis score (z)")
+        ax.set_xlim(-0.2, 4.35); ax.set_xticks(range(4)); ax.set_xticklabels(waves); ax.set_ylabel("Composite distress score (z)")
         ax.set_xlabel("Wave")
 
     def c(ax):
@@ -625,7 +625,7 @@ def fig5():
         ax.set_xlabel("Profile")
 
     def e(ax):
-        rows = sheet("Fig 5e")
+        rows = sheet("Supp Fig 1b")
         M = np.array([[r["Probability"] for r in rows if r["From"] == f"S{i}"] for i in range(1, 6)])
         cmap = LinearSegmentedColormap.from_list("b", ["#F7FBFF", "#8FB8E0", "#1B5A96"])
         ax.imshow(M, cmap=cmap, vmin=0, vmax=0.75, aspect="auto")
@@ -639,7 +639,7 @@ def fig5():
             sp.set_visible(False)
 
     def f(ax):
-        rows = sheet("Fig 5f")
+        rows = sheet("Supp Fig 1c")
         bottom = np.zeros(4)
         for r, color in zip(rows, STATE):
             v = np.array([r[f"T{i}, %"] for i in range(4)])
@@ -660,13 +660,15 @@ def fig5():
     s.panel("fig5b", W1, 0, W2, 2.05, 0.46, 0.1, 0.02, 0.36, b)
     s.letter("c", W1 + W2, 0)
     s.panel("fig5c", W1 + W2, 0, W3, 2.05, 0.92, 0.1, 0.06, 0.36, c)
-    s.letter("d", 0, 2.1)
-    s.panel("fig5d", 0, 2.1, W1, 2.05, 0.46, 0.1, 0.08, 0.36, bic("Fig 5d", "States", "Model", [("LTA without random intercept", "LTA", MID), ("Random-intercept LTA", "RI-LTA", BLUE)], "Latent states (k)", (-60, 2050)))
-    s.letter("e", W1, 2.1)
-    s.panel("fig5e", W1, 2.1, W2, 2.05, 0.46, 0.1, 0.1, 0.36, e)
-    s.letter("f", W1 + W2, 2.1)
-    s.panel("fig5f", W1 + W2, 2.1, W3, 2.05, 0.5, 0.1, 0.42, 0.36, f)
-    return s
+
+    t = Scene("SupplementaryFig1", 2.05)
+    t.letter("a", 0, 0)
+    t.panel("figS1a", 0, 0, W1, 2.05, 0.46, 0.1, 0.08, 0.36, bic("Supp Fig 1a", "States", "Model", [("LTA without random intercept", "LTA", MID), ("Random-intercept LTA", "RI-LTA", BLUE)], "Latent states (k)", (-60, 2050)))
+    t.letter("b", W1, 0)
+    t.panel("figS1b", W1, 0, W2, 2.05, 0.46, 0.1, 0.1, 0.36, e)
+    t.letter("c", W1 + W2, 0)
+    t.panel("figS1c", W1 + W2, 0, W3, 2.05, 0.5, 0.1, 0.42, 0.36, f)
+    return s, t
 
 
 # ---------------------------------------------------------------- Fig. 6
@@ -736,7 +738,8 @@ def fig6():
 def main():
     os.makedirs(OUT, exist_ok=True)
     os.makedirs(PANELS, exist_ok=True)
-    scenes = [fig1(), fig2(), fig3(), fig4(), fig5(), fig6()]
+    s5, s_supp = fig5()
+    scenes = [fig1(), fig2(), fig3(), fig4(), s5, fig6(), s_supp]
     prs = Presentation()
     prs.slide_width = Inches(WIDTH)
     prs.slide_height = Inches(max(s.height for s in scenes))

@@ -1,10 +1,10 @@
 ﻿Path,Role,Standardized β,95% CI,90% CI,b,SE,P,Benchmark
 Stress to lnRMSSD,Focal,-0.140,"[-0.235, -0.045]","[-0.219, -0.060]",-0.182,0.063,0.004,Large
-lnRMSSD to Crisis,Focal,-0.114,"[-0.193, -0.034]","[-0.180, -0.047]",-0.136,0.048,0.004,Medium
-Stress to Crisis,Direct,0.118,"[0.045, 0.192]","[0.057, 0.180]",0.179,0.058,0.002,Medium
-Crisis to Stress,Reverse,0.053,"[-0.031, 0.137]","[-0.017, 0.123]",0.040,0.033,0.221,Small
-Crisis to lnRMSSD,Reverse,0.026,"[-0.048, 0.100]","[-0.036, 0.088]",0.026,0.037,0.488,Negligible
+lnRMSSD to Distress,Focal,-0.114,"[-0.193, -0.034]","[-0.180, -0.047]",-0.136,0.048,0.004,Medium
+Stress to Distress,Direct,0.118,"[0.045, 0.192]","[0.057, 0.180]",0.179,0.058,0.002,Medium
+Distress to Stress,Reverse,0.053,"[-0.031, 0.137]","[-0.017, 0.123]",0.040,0.033,0.221,Small
+Distress to lnRMSSD,Reverse,0.026,"[-0.048, 0.100]","[-0.036, 0.088]",0.026,0.037,0.488,Negligible
 lnRMSSD to Stress,Reverse,-0.041,"[-0.147, 0.066]","[-0.130, 0.048]",-0.032,0.043,0.452,Small
 Stress to Stress,Carry-over,0.228,"[0.134, 0.322]","[0.149, 0.307]",0.227,0.050,< 0.001,Large
 lnRMSSD to lnRMSSD,Carry-over,0.299,"[0.163, 0.435]","[0.185, 0.413]",0.309,0.073,< 0.001,Large
-Crisis to Crisis,Carry-over,0.344,"[0.260, 0.429]","[0.273, 0.415]",0.397,0.047,< 0.001,Large
+Distress to Distress,Carry-over,0.344,"[0.260, 0.429]","[0.273, 0.415]",0.397,0.047,< 0.001,Large
