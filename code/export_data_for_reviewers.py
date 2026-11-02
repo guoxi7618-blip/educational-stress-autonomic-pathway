@@ -875,7 +875,7 @@ This package holds the summary-level data behind the numbers reported in the man
 
 The summary values were computed from the {len(TABLES)} record-level tables listed in `09_codebook/record_level_tables.csv`. These tables cover screening, participants, questionnaire items and scores, clinician ratings, laboratory ECG and EEG, nocturnal ring and chest-strap recordings, momentary prompts, smartphone sensing, platform logs and safety events. They are not included in this package.
 
-Access follows the manuscript's Data availability statement: processed feature-level data are to be deposited at https://github.com/guoxi7618-blip/educational-stress-autonomic-pathway, and raw physiological recordings and restricted variables are available from the corresponding author on reasonable request. This package itself holds summary-level data only.
+Access follows the manuscript's Data availability statement: summary-level data are openly available at https://github.com/guoxi7618-blip/educational-stress-autonomic-pathway, and record-level tables, raw physiological recordings and restricted variables are available from the corresponding author on reasonable request. This package itself holds summary-level data only.
 
 The record-level tables contain information that requires controlled access:
 
