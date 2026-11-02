@@ -1,0 +1,7 @@
+﻿Model,Scaled chi-square,df,P,Robust CFI,Robust TLI,Robust RMSEA,SRMR,BIC
+"RI-CLPM, free over waves",18.867,21,0.594,1.000,1.006,0.000,0.021,"23,000.3"
+"RI-CLPM, constrained (main model)",56.353,51,0.282,1.000,1.002,0.000,0.041,"22,850.3"
+Traditional cross-lagged model,192.010,57,0.000,0.927,0.915,0.077,0.067,"22,959.8"
+"RI-CLPM, constrained, no auxiliaries",56.675,51,0.272,1.000,1.001,0.000,0.038,"14,037.4"
+"RI-CLPM, core sample",50.348,51,0.499,1.000,1.003,0.000,0.050,"12,148.6"
+"RI-CLPM, posterior alpha, core sample",49.463,51,0.535,1.000,1.002,0.000,0.049,"11,240.5"

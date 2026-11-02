@@ -1,0 +1,304 @@
+﻿file,column,description
+01_participants/enrolment_flow.csv,Stage,Screening / enrolment stage.
+01_participants/enrolment_flow.csv,n,Number of individuals at that stage.
+01_participants/participant_characteristics.csv,Characteristic,Baseline characteristic. Values are mean (SD) unless the label says n (%).
+01_participants/participant_characteristics.csv,Total (n = 600),All enrolled participants.
+01_participants/participant_characteristics.csv,Core (n = 300),Core sample: all laboratory measures at every wave.
+01_participants/participant_characteristics.csv,Extended (n = 300),"Extended sample: laboratory electrocardiography at T0 and T3, remote measures at every wave."
+01_participants/retention_by_wave.csv,Wave,Assessment wave.
+01_participants/retention_by_wave.csv,Month,Study month of the wave.
+01_participants/retention_by_wave.csv,"Retained, n",Participants with questionnaire data at that wave.
+01_participants/retention_by_wave.csv,"Retained, %",Percentage of the 600 enrolled participants.
+01_participants/retention_by_wave.csv,"Core, n",Retained participants in the core sample.
+01_participants/retention_by_wave.csv,"Extended, n",Retained participants in the extended sample.
+01_participants/dropout_model.csv,Predictor,"Baseline predictor of not being retained at T3 (per unit, or male vs female)."
+01_participants/dropout_model.csv,Odds ratio,Odds ratio.
+01_participants/dropout_model.csv,95% CI,Wald 95% confidence interval.
+01_participants/dropout_model.csv,P,Two-sided P value.
+02_descriptives_and_quality/outcomes_by_wave.csv,Wave,Assessment wave.
+02_descriptives_and_quality/outcomes_by_wave.csv,n,Participants with questionnaire data.
+02_descriptives_and_quality/outcomes_by_wave.csv,"PHQ-9, M (SD)","PHQ-9 total, mean (SD)."
+02_descriptives_and_quality/outcomes_by_wave.csv,"PHQ-9 ≥ 10, %",Percentage at or above the PHQ-9 cut-off of 10.
+02_descriptives_and_quality/outcomes_by_wave.csv,"GAD-7, M (SD)","GAD-7 total, mean (SD)."
+02_descriptives_and_quality/outcomes_by_wave.csv,"Academic stress, M (SD)",Academic stress item mean (1–5).
+02_descriptives_and_quality/outcomes_by_wave.csv,"Employment anxiety, M (SD)",Employment anxiety item mean (1–5).
+02_descriptives_and_quality/outcomes_by_wave.csv,"Interpersonal stress, M (SD)",Interpersonal stress item mean (1–5).
+02_descriptives_and_quality/outcomes_by_wave.csv,"PSQI, M (SD)",Pittsburgh Sleep Quality Index total.
+02_descriptives_and_quality/outcomes_by_wave.csv,"Valid lnRMSSD, n",Sessions with a valid resting lnRMSSD.
+02_descriptives_and_quality/outcomes_by_wave.csv,"Resting lnRMSSD, M (SD)","Resting lnRMSSD (ln ms), mean (SD)."
+02_descriptives_and_quality/data_quality.csv,Indicator,Data-quality indicator.
+02_descriptives_and_quality/data_quality.csv,Numerator,Units meeting the criterion.
+02_descriptives_and_quality/data_quality.csv,Denominator,Units in the denominator.
+02_descriptives_and_quality/data_quality.csv,%,Percentage.
+02_descriptives_and_quality/laboratory_manipulation_checks.csv,Check,Manipulation or signal check.
+02_descriptives_and_quality/laboratory_manipulation_checks.csv,n,Sessions (or channel-level rows for the eyes-open ratio).
+02_descriptives_and_quality/laboratory_manipulation_checks.csv,Value,"Mean difference, ratio or M (SD)."
+02_descriptives_and_quality/laboratory_manipulation_checks.csv,Statistic,Paired t statistic where applicable.
+02_descriptives_and_quality/eeg_alpha_by_channel.csv,Channel,"Electrode, including recovered FCz."
+02_descriptives_and_quality/eeg_alpha_by_channel.csv,"Eyes closed, M (SD)",Log alpha peak height in the eyes-closed block.
+02_descriptives_and_quality/eeg_alpha_by_channel.csv,"Eyes open, M (SD)",Log alpha peak height in the eyes-open block.
+02_descriptives_and_quality/eeg_alpha_by_channel.csv,"Sessions, n",Sessions contributing to the channel.
+02_descriptives_and_quality/scale_reliability.csv,Scale,Questionnaire scale.
+02_descriptives_and_quality/scale_reliability.csv,Items,Number of items.
+02_descriptives_and_quality/scale_reliability.csv,Cronbach's alpha at T0,Raw Cronbach's alpha at baseline.
+02_descriptives_and_quality/intraclass_correlations.csv,Construct,Repeated measure.
+02_descriptives_and_quality/intraclass_correlations.csv,ICC,Intraclass correlation from a random-intercept model.
+02_descriptives_and_quality/measurement_invariance.csv,Composite,Composite and its indicators.
+02_descriptives_and_quality/measurement_invariance.csv,Level,Invariance level.
+02_descriptives_and_quality/measurement_invariance.csv,Scaled chi-square,Robust scaled chi-square.
+02_descriptives_and_quality/measurement_invariance.csv,df,Degrees of freedom.
+02_descriptives_and_quality/measurement_invariance.csv,Robust CFI,Robust comparative fit index (blank for the configural model).
+02_descriptives_and_quality/measurement_invariance.csv,Robust RMSEA,Robust RMSEA (blank for the configural model).
+02_descriptives_and_quality/measurement_invariance.csv,SRMR,Standardized root mean square residual.
+02_descriptives_and_quality/common_method_variance.csv,Test,Common method variance indicator.
+02_descriptives_and_quality/common_method_variance.csv,Value,Value of the indicator.
+03_within_person_panel/model_fit.csv,Model,Panel model.
+03_within_person_panel/model_fit.csv,Scaled chi-square,Robust scaled chi-square.
+03_within_person_panel/model_fit.csv,df,Degrees of freedom.
+03_within_person_panel/model_fit.csv,P,P value of the scaled chi-square.
+03_within_person_panel/model_fit.csv,Robust CFI,"Robust comparative fit index, with auxiliaries saturated in the baseline model."
+03_within_person_panel/model_fit.csv,Robust TLI,Robust Tucker–Lewis index.
+03_within_person_panel/model_fit.csv,Robust RMSEA,Robust RMSEA.
+03_within_person_panel/model_fit.csv,SRMR,SRMR over the substantive variables.
+03_within_person_panel/model_fit.csv,BIC,Bayesian information criterion.
+03_within_person_panel/model_comparisons.csv,Comparison,Nested comparison.
+03_within_person_panel/model_comparisons.csv,Scaled difference in chi-square,Satorra–Bentler scaled difference.
+03_within_person_panel/model_comparisons.csv,df difference,Difference in degrees of freedom.
+03_within_person_panel/model_comparisons.csv,P,P value of the difference test.
+03_within_person_panel/riclpm_nine_paths.csv,Path,Lagged path from wave t − 1 to wave t.
+03_within_person_panel/riclpm_nine_paths.csv,Role,"Focal, direct, reverse or carry-over path."
+03_within_person_panel/riclpm_nine_paths.csv,Standardized β,Standardized estimate averaged over waves.
+03_within_person_panel/riclpm_nine_paths.csv,95% CI,95% CI of the standardized estimate.
+03_within_person_panel/riclpm_nine_paths.csv,90% CI,"90% CI of the standardized estimate, used to judge reverse paths against ±0.07."
+03_within_person_panel/riclpm_nine_paths.csv,b,Unstandardized estimate.
+03_within_person_panel/riclpm_nine_paths.csv,SE,Robust standard error.
+03_within_person_panel/riclpm_nine_paths.csv,P,Two-sided P value.
+03_within_person_panel/riclpm_nine_paths.csv,Benchmark,"Size against published benchmarks of 0.03, 0.07 and 0.12."
+03_within_person_panel/lagged_paths_by_model.csv,Model,Panel model.
+03_within_person_panel/lagged_paths_by_model.csv,Path,Lagged path.
+03_within_person_panel/lagged_paths_by_model.csv,b,Unstandardized estimate.
+03_within_person_panel/lagged_paths_by_model.csv,SE,Robust standard error.
+03_within_person_panel/lagged_paths_by_model.csv,95% CI,95% CI of the unstandardized estimate.
+03_within_person_panel/lagged_paths_by_model.csv,P,Two-sided P value.
+03_within_person_panel/lagged_paths_by_model.csv,Standardized β,Standardized estimate averaged over waves.
+03_within_person_panel/random_intercept_correlations.csv,Pair,Pair of random intercepts.
+03_within_person_panel/random_intercept_correlations.csv,r,Standardized covariance.
+03_within_person_panel/random_intercept_correlations.csv,P,Two-sided P value.
+03_within_person_panel/between_within_correlations.csv,Pair,Pair of composites.
+03_within_person_panel/between_within_correlations.csv,"Between persons, r",Pearson correlation of person means.
+03_within_person_panel/between_within_correlations.csv,"Within persons, r",Pearson correlation of person-centred scores.
+03_within_person_panel/confirmatory_tests.csv,Hypothesis,Confirmatory hypothesis.
+03_within_person_panel/confirmatory_tests.csv,Estimate,β: standardized lag averaged over waves; plain value: unstandardized a × b; b: unstandardized interaction.
+03_within_person_panel/confirmatory_tests.csv,95% CI,95% CI of the estimate; for H4 the index of moderated mediation (IMM) with its Monte Carlo 95% CI.
+03_within_person_panel/confirmatory_tests.csv,P,"Two-sided P value, four decimals."
+03_within_person_panel/confirmatory_tests.csv,Holm-adjusted P,"Holm-adjusted P value across the five tests, four decimals."
+03_within_person_panel/indirect_effect_robustness.csv,Specification,Model specification.
+03_within_person_panel/indirect_effect_robustness.csv,n,Participants in the model.
+03_within_person_panel/indirect_effect_robustness.csv,"Stress to mediator, β",Standardized first-stage lag.
+03_within_person_panel/indirect_effect_robustness.csv,P (first stage),P value of the first-stage lag.
+03_within_person_panel/indirect_effect_robustness.csv,"Mediator to crisis, β",Standardized second-stage lag.
+03_within_person_panel/indirect_effect_robustness.csv,P (second stage),P value of the second-stage lag.
+03_within_person_panel/indirect_effect_robustness.csv,Indirect effect,Unstandardized a × b.
+03_within_person_panel/indirect_effect_robustness.csv,95% CI,Monte Carlo 95% CI of the indirect effect.
+03_within_person_panel/indirect_effect_robustness.csv,Robust CFI,Robust CFI.
+03_within_person_panel/indirect_effect_robustness.csv,Robust RMSEA,Robust RMSEA.
+03_within_person_panel/indirect_effect_robustness.csv,SRMR,SRMR.
+03_within_person_panel/moderation_tests.csv,Moderator,Baseline moderator.
+03_within_person_panel/moderation_tests.csv,Stage,Stage of the pathway it moderates.
+03_within_person_panel/moderation_tests.csv,Interaction b,Unstandardized interaction.
+03_within_person_panel/moderation_tests.csv,SE,Robust standard error.
+03_within_person_panel/moderation_tests.csv,P,Two-sided P value.
+03_within_person_panel/moderation_tests.csv,95% CI,95% CI of the interaction.
+03_within_person_panel/moderation_tests.csv,IMM,Index of moderated mediation.
+03_within_person_panel/moderation_tests.csv,IMM 95% CI,Monte Carlo 95% CI of the IMM.
+03_within_person_panel/moderation_tests.csv,Slope n.s. from (SD),Lower end of the moderator range in which the slope does not differ from zero.
+03_within_person_panel/moderation_tests.csv,Slope n.s. to (SD),"Upper end of that range (end of the evaluated grid, 2.5 SD)."
+03_within_person_panel/moderation_simple_slopes.csv,Path,Conditional path.
+03_within_person_panel/moderation_simple_slopes.csv,Moderator level (SD),Moderator value in SD from the mean.
+03_within_person_panel/moderation_simple_slopes.csv,Simple slope,Unstandardized slope.
+03_within_person_panel/moderation_simple_slopes.csv,P,Two-sided P value.
+03_within_person_panel/multigroup_tests.csv,Split,Grouping variable.
+03_within_person_panel/multigroup_tests.csv,Group 0,First group.
+03_within_person_panel/multigroup_tests.csv,Group 1,Second group.
+03_within_person_panel/multigroup_tests.csv,"Stress to lnRMSSD b, group 0",Unstandardized first-stage lag.
+03_within_person_panel/multigroup_tests.csv,"P, group 0 (first stage)",P value.
+03_within_person_panel/multigroup_tests.csv,"Stress to lnRMSSD b, group 1",Unstandardized first-stage lag.
+03_within_person_panel/multigroup_tests.csv,"P, group 1 (first stage)",P value.
+03_within_person_panel/multigroup_tests.csv,"lnRMSSD to crisis b, group 0",Unstandardized second-stage lag.
+03_within_person_panel/multigroup_tests.csv,"P, group 0 (second stage)",P value.
+03_within_person_panel/multigroup_tests.csv,"lnRMSSD to crisis b, group 1",Unstandardized second-stage lag.
+03_within_person_panel/multigroup_tests.csv,"P, group 1 (second stage)",P value.
+03_within_person_panel/multigroup_tests.csv,Equality test P,Likelihood-ratio test of equal focal paths across groups.
+03_within_person_panel/parallel_mediators.csv,Quantity,Indirect effect or their difference.
+03_within_person_panel/parallel_mediators.csv,Estimate,Unstandardized estimate.
+03_within_person_panel/parallel_mediators.csv,95% CI,Monte Carlo 95% CI.
+03_within_person_panel/school_variance.csv,Composite,Composite.
+03_within_person_panel/school_variance.csv,Share of variance explained by school,R² of school as a fixed effect.
+03_within_person_panel/secondary_categorical_outcomes.csv,Outcome at next wave,Categorical outcome.
+03_within_person_panel/secondary_categorical_outcomes.csv,Predictor,Person-mean-centred predictor at the preceding wave.
+03_within_person_panel/secondary_categorical_outcomes.csv,Events,Transitions with the outcome.
+03_within_person_panel/secondary_categorical_outcomes.csv,Transitions,Transitions with laboratory ECG at the preceding wave.
+03_within_person_panel/secondary_categorical_outcomes.csv,Odds ratio,Odds ratio from generalized estimating equations.
+03_within_person_panel/secondary_categorical_outcomes.csv,95% CI,95% confidence interval.
+03_within_person_panel/secondary_categorical_outcomes.csv,P,Two-sided P value.
+03_within_person_panel/secondary_categorical_outcomes.csv,Holm-adjusted P,Holm-adjusted across the six tests.
+04_daily_bursts_and_devices/dsem_parameters.csv,Block,Parameter group.
+04_daily_bursts_and_devices/dsem_parameters.csv,Parameter,Model parameter.
+04_daily_bursts_and_devices/dsem_parameters.csv,Standardized median,"Posterior median, standardized."
+04_daily_bursts_and_devices/dsem_parameters.csv,95% CrI,95% credible interval.
+04_daily_bursts_and_devices/dsem_parameters.csv,Posterior probability of direction,Posterior probability that the parameter has the sign of its median.
+04_daily_bursts_and_devices/dsem_parameters.csv,Unstandardized median,"Posterior median, unstandardized."
+04_daily_bursts_and_devices/dsem_parameters.csv,R-hat,Convergence diagnostic.
+04_daily_bursts_and_devices/dsem_parameters.csv,Effective sample size,Bulk effective sample size.
+04_daily_bursts_and_devices/dsem_diagnostics.csv,Quantity,Setting or diagnostic.
+04_daily_bursts_and_devices/dsem_diagnostics.csv,Value,Value.
+04_daily_bursts_and_devices/daily_multilevel_models.csv,Path,Within-person path.
+04_daily_bursts_and_devices/daily_multilevel_models.csv,b,Unstandardized estimate (per scale point or ln unit).
+04_daily_bursts_and_devices/daily_multilevel_models.csv,SE,Standard error.
+04_daily_bursts_and_devices/daily_multilevel_models.csv,P,Two-sided P value.
+04_daily_bursts_and_devices/daily_multilevel_models.csv,Person-nights,Observations in the model.
+04_daily_bursts_and_devices/device_agreement.csv,Comparison,"Device comparison, in ln units."
+04_daily_bursts_and_devices/device_agreement.csv,Pairs,Nights (H10) or person-waves with at least five valid nights (laboratory).
+04_daily_bursts_and_devices/device_agreement.csv,r,Pearson correlation.
+04_daily_bursts_and_devices/device_agreement.csv,Concordance,Lin's concordance correlation coefficient.
+04_daily_bursts_and_devices/device_agreement.csv,"ICC(2,1)","Two-way random, absolute agreement, single measure."
+04_daily_bursts_and_devices/device_agreement.csv,Bias,"Mean difference, ring minus reference."
+04_daily_bursts_and_devices/device_agreement.csv,Limits of agreement,Bias ± 1.96 SD of the differences.
+04_daily_bursts_and_devices/device_agreement.csv,Proportional slope,Slope of the difference on the pair mean.
+04_daily_bursts_and_devices/device_tracking.csv,Quantity,Quantity.
+04_daily_bursts_and_devices/device_tracking.csv,Value,Value.
+04_daily_bursts_and_devices/daily_coupling_bins.csv,Panel,Figure panel.
+04_daily_bursts_and_devices/daily_coupling_bins.csv,Predictor (centred),"Predictor, centred within person and burst."
+04_daily_bursts_and_devices/daily_coupling_bins.csv,Outcome (centred),"Outcome, centred within person and burst."
+04_daily_bursts_and_devices/daily_coupling_bins.csv,Bin,"Quantile bin of the predictor, lowest to highest."
+04_daily_bursts_and_devices/daily_coupling_bins.csv,n,Person-days or person-nights in the bin.
+04_daily_bursts_and_devices/daily_coupling_bins.csv,Predictor mean,Mean predictor value in the bin.
+04_daily_bursts_and_devices/daily_coupling_bins.csv,Outcome mean,Mean outcome value in the bin.
+04_daily_bursts_and_devices/daily_coupling_bins.csv,95% CI,t-based 95% CI of the outcome mean; it ignores clustering within person.
+05_profiles_and_states/profile_composition.csv,Profile,"Profile, numbered from lowest to highest crisis at T3."
+05_profiles_and_states/profile_composition.csv,Label,Descriptive label.
+05_profiles_and_states/profile_composition.csv,n,Students assigned (507 with complete indicators).
+05_profiles_and_states/profile_composition.csv,%,Percentage of the 507 students.
+05_profiles_and_states/profile_composition.csv,"Crisis T0, M (SD)","Composite crisis score at T0, mean (SD) among attendees."
+05_profiles_and_states/profile_composition.csv,"Crisis T1, M (SD)","Composite crisis score at T1, mean (SD) among attendees."
+05_profiles_and_states/profile_composition.csv,"Crisis T2, M (SD)","Composite crisis score at T2, mean (SD) among attendees."
+05_profiles_and_states/profile_composition.csv,"Crisis T3, M (SD)","Composite crisis score at T3, mean (SD) among attendees."
+05_profiles_and_states/profile_composition.csv,"Waves in states S4–S5, %",Percentage of the profile's person-waves in the two most severe latent states.
+05_profiles_and_states/profile_crisis_by_wave.csv,Profile,Profile.
+05_profiles_and_states/profile_crisis_by_wave.csv,Wave,Assessment wave.
+05_profiles_and_states/profile_crisis_by_wave.csv,n,Students with a crisis score at that wave.
+05_profiles_and_states/profile_crisis_by_wave.csv,"Crisis, mean",Mean composite crisis score.
+05_profiles_and_states/profile_crisis_by_wave.csv,95% CI,t-based 95% CI of the mean.
+05_profiles_and_states/lpa_fit.csv,Indicators,Indicator set.
+05_profiles_and_states/lpa_fit.csv,Classes,Number of classes.
+05_profiles_and_states/lpa_fit.csv,Log-likelihood,Log-likelihood.
+05_profiles_and_states/lpa_fit.csv,BIC,Bayesian information criterion.
+05_profiles_and_states/lpa_fit.csv,Sample-size-adjusted BIC,Sample-size-adjusted BIC.
+05_profiles_and_states/lpa_fit.csv,Entropy,Relative entropy.
+05_profiles_and_states/lpa_fit.csv,Smallest class,Share of the smallest class.
+05_profiles_and_states/lpa_fit.csv,Bootstrap LRT P,Bootstrap likelihood-ratio test of k against k + 1 classes; blank for six.
+05_profiles_and_states/lcga_fit.csv,Classes,Number of classes.
+05_profiles_and_states/lcga_fit.csv,BIC,Bayesian information criterion.
+05_profiles_and_states/lcga_fit.csv,Log-likelihood,Log-likelihood.
+05_profiles_and_states/lcga_fit.csv,Smallest class,Share of the smallest class.
+05_profiles_and_states/three_profile_solution.csv,Class,"Class, largest first."
+05_profiles_and_states/three_profile_solution.csv,n,Students assigned.
+05_profiles_and_states/three_profile_solution.csv,%,Percentage of the 507 students.
+05_profiles_and_states/three_profile_bch_means.csv,Variable (z score),"Baseline variable, or crisis at T3 (descriptive), z score."
+05_profiles_and_states/three_profile_bch_means.csv,Low mean (n = 212),Bias-corrected mean in the low group.
+05_profiles_and_states/three_profile_bch_means.csv,Intermediate mean (n = 210),Bias-corrected mean in the intermediate group.
+05_profiles_and_states/three_profile_bch_means.csv,High mean (n = 85),Bias-corrected mean in the high group.
+05_profiles_and_states/bch_means.csv,Variable (z score),"Baseline variable, z score. Crisis at T3 is descriptive and was not tested."
+05_profiles_and_states/bch_means.csv,P1 mean,Bias-corrected mean in profile P1.
+05_profiles_and_states/bch_means.csv,P2 mean,Bias-corrected mean in profile P2.
+05_profiles_and_states/bch_means.csv,P3 mean,Bias-corrected mean in profile P3.
+05_profiles_and_states/bch_means.csv,P4 mean,Bias-corrected mean in profile P4.
+05_profiles_and_states/bch_means.csv,P5 mean,Bias-corrected mean in profile P5.
+05_profiles_and_states/bch_contrasts.csv,Variable (z score),"Baseline variable, z score."
+05_profiles_and_states/bch_contrasts.csv,P5 mean,"Bias-corrected mean, escalating profile."
+05_profiles_and_states/bch_contrasts.csv,P1 mean,"Bias-corrected mean, stable low profile."
+05_profiles_and_states/bch_contrasts.csv,P5 − P1,Difference.
+05_profiles_and_states/bch_contrasts.csv,95% CI,"Person-level bootstrap 95% CI from 2,000 resamples."
+05_profiles_and_states/rilta_fit.csv,Model,Latent transition model.
+05_profiles_and_states/rilta_fit.csv,States,Number of states.
+05_profiles_and_states/rilta_fit.csv,Log-likelihood,Best log-likelihood.
+05_profiles_and_states/rilta_fit.csv,Parameters,Free parameters.
+05_profiles_and_states/rilta_fit.csv,AIC,Akaike information criterion.
+05_profiles_and_states/rilta_fit.csv,BIC,Bayesian information criterion.
+05_profiles_and_states/rilta_fit.csv,Sample-size-adjusted BIC,Sample-size-adjusted BIC.
+05_profiles_and_states/rilta_fit.csv,Entropy,Relative entropy.
+05_profiles_and_states/rilta_fit.csv,Smallest state,Share of the smallest state.
+05_profiles_and_states/rilta_fit.csv,Starts reaching the best log-likelihood,Of 30 random starts.
+05_profiles_and_states/rilta_state_means.csv,State,"Latent state, least to most severe."
+05_profiles_and_states/rilta_state_means.csv,Indicator,Indicator.
+05_profiles_and_states/rilta_state_means.csv,Scale,Scale of the estimate.
+05_profiles_and_states/rilta_state_means.csv,Estimate,State-specific value.
+05_profiles_and_states/rilta_state_means.csv,95% CI,"95% CI from 2,000 draws from the asymptotic distribution."
+05_profiles_and_states/rilta_loadings.csv,Indicator,Indicator.
+05_profiles_and_states/rilta_loadings.csv,Loading,Free loading on the unit-variance random intercept.
+05_profiles_and_states/rilta_loadings.csv,95% CI,"95% CI from 2,000 draws from the asymptotic distribution."
+05_profiles_and_states/rilta_loadings.csv,Residual SD,Residual SD for continuous indicators; blank otherwise.
+05_profiles_and_states/rilta_transitions.csv,From,State at wave t − 1.
+05_profiles_and_states/rilta_transitions.csv,To,State at wave t.
+05_profiles_and_states/rilta_transitions.csv,Probability,Transition probability.
+05_profiles_and_states/rilta_transitions.csv,95% CI,"95% CI from 2,000 draws. Intervals from S4 and S5 are close to the [0, 1] bounds and are poorly determined."
+05_profiles_and_states/rilta_prevalence.csv,State,Latent state.
+05_profiles_and_states/rilta_prevalence.csv,"T0, %","Prevalence at T0, from posterior state probabilities."
+05_profiles_and_states/rilta_prevalence.csv,"T1, %","Prevalence at T1, from posterior state probabilities."
+05_profiles_and_states/rilta_prevalence.csv,"T2, %","Prevalence at T2, from posterior state probabilities."
+05_profiles_and_states/rilta_prevalence.csv,"T3, %","Prevalence at T3, from posterior state probabilities."
+06_prediction/prediction_performance.csv,Population,"All transitions, or transitions from below threshold."
+06_prediction/prediction_performance.csv,Model,Feature set.
+06_prediction/prediction_performance.csv,n,Transitions.
+06_prediction/prediction_performance.csv,Events,Transitions into the subclinical state.
+06_prediction/prediction_performance.csv,AUC,"Area under the curve, mean over 10 repeats of 5-fold person-grouped cross-validation."
+06_prediction/prediction_performance.csv,Brier score,Brier score.
+06_prediction/prediction_performance.csv,Calibration intercept,Logistic recalibration intercept.
+06_prediction/prediction_performance.csv,Calibration slope,Logistic recalibration slope.
+06_prediction/prediction_performance.csv,AUC change from self-report,Bootstrap mean difference in AUC.
+06_prediction/prediction_performance.csv,95% CI,Person-level bootstrap 95% CI.
+06_prediction/net_benefit.csv,Population,All transitions or new onset.
+06_prediction/net_benefit.csv,Model,Feature set.
+06_prediction/net_benefit.csv,Risk threshold,Risk threshold.
+06_prediction/net_benefit.csv,Net benefit,"True positives minus false positives weighted by the threshold odds, per person."
+06_prediction/net_benefit.csv,Net benefit of contacting all,Reference: contacting all students.
+06_prediction/feature_contributions.csv,Feature,Standardized predictor.
+06_prediction/feature_contributions.csv,Mean absolute Shapley value,Mean absolute Shapley value on the log-odds scale.
+06_prediction/feature_contributions.csv,Coefficient,Regression coefficient on the standardized predictor.
+06_prediction/calibration_deciles.csv,Decile,"Decile of cross-validated predicted risk, averaged over 10 repeats."
+06_prediction/calibration_deciles.csv,n,Transitions in the decile.
+06_prediction/calibration_deciles.csv,Mean predicted risk,Mean predicted risk.
+06_prediction/calibration_deciles.csv,Observed proportion,Observed proportion in the subclinical state at the next wave.
+06_prediction/calibration_deciles.csv,95% CI,Wilson 95% CI of the observed proportion.
+07_safety/safety_events_summary.csv,Indicator,Safety indicator.
+07_safety/safety_events_summary.csv,Value,"Count, count of total, count (%) or median. Taken from the safety_events records as confirmed by the authors; source documents were not inspected in this check."
+08_verification/manuscript_vs_recomputed.csv,Quantity,Reported quantity.
+08_verification/manuscript_vs_recomputed.csv,Manuscript location,"Section, table or figure."
+08_verification/manuscript_vs_recomputed.csv,Manuscript,Value as printed in the manuscript.
+08_verification/manuscript_vs_recomputed.csv,Recomputed,"Value obtained here, one decimal beyond the manuscript's precision."
+08_verification/manuscript_vs_recomputed.csv,Basis,"Recomputed or re-run from the tables, re-fitted in lavaan, or read from the stored analysis output."
+08_verification/manuscript_vs_recomputed.csv,Match,Yes; Yes (rounding): equal within half a unit of the printed precision but half-up rounding gives another digit; No; Source documents not inspected; Not verifiable.
+08_verification/manuscript_vs_recomputed.csv,Note,Explanation where needed.
+08_verification/manuscript_to_data_map.csv,Manuscript result,Result.
+08_verification/manuscript_to_data_map.csv,Manuscript section,"Section, table or figure."
+08_verification/manuscript_to_data_map.csv,Summary file,File in this package.
+08_verification/manuscript_to_data_map.csv,Record-level source table,Record-level tables behind the result.
+08_verification/manuscript_to_data_map.csv,Key variables,Main variables used.
+08_verification/figure_to_data_map.csv,Panel,Figure panel or table.
+08_verification/figure_to_data_map.csv,Content,What it shows.
+08_verification/figure_to_data_map.csv,Data file,File in this package.
+08_verification/figure_to_data_map.csv,Note,Explanation where needed.
+09_codebook/record_level_tables.csv,table,Record-level table.
+09_codebook/record_level_tables.csv,unit,Unit of observation.
+09_codebook/record_level_tables.csv,rows,Rows.
+09_codebook/record_level_tables.csv,n_variables,Variables.
+09_codebook/record_level_tables.csv,manuscript,Manuscript sections that use it.
+09_codebook/record_level_tables.csv,included_in_package,Whether the table is in this package.
+09_codebook/codebook_record_level_tables.csv,table,Record-level table.
+09_codebook/codebook_record_level_tables.csv,variable,Variable.
+09_codebook/codebook_record_level_tables.csv,description,Description.
+09_codebook/codebook_record_level_tables.csv,non_missing,Non-missing values.
+09_codebook/codebook_record_level_tables.csv,range_or_levels,Range or levels. Date ranges are not shown.
+09_codebook/codebook_summary_tables.csv,file,Summary file.
+09_codebook/codebook_summary_tables.csv,column,Column.
+09_codebook/codebook_summary_tables.csv,description,Description.

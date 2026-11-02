@@ -1,0 +1,227 @@
+﻿table,variable,description,non_missing,range_or_levels
+screening,pid,Pseudonymous participant identifier.,"2,000","2,000 distinct"
+screening,school,University code.,"2,000","S1, S2, S3"
+screening,grade,Y1–Y4 = undergraduate year; PG = postgraduate.,"2,000","PG, Y1, Y2, Y3, Y4"
+screening,sex,F / M.,"2,000","F, M"
+screening,screen_phq9,PHQ-9 at screening.,"2,000",0 – 26
+screening,screen_gad7,GAD-7 at screening.,"2,000",0 – 21
+screening,screen_cssrs_ideation,"C-SSRS ideation level at screening, 0–5.","2,000","0, 1, 2, 3, 4, 5"
+screening,prior_attempt_12m,Suicide attempt in the past 12 months (0/1).,"2,000","0, 1"
+screening,exclusion_medication,Excluded for medication (0/1).,"2,000","0, 1"
+screening,exclusion_somatic,Excluded for somatic disease (0/1).,"2,000","0, 1"
+screening,eligible,Met the criteria (0/1).,"2,000","0, 1"
+screening,consented,Consented (0/1).,"2,000","0, 1"
+screening,enrolled,Enrolled (0/1).,"2,000","0, 1"
+participants,pid,Pseudonymous participant identifier.,600,600 distinct
+participants,school,University code.,600,"S1, S2, S3"
+participants,cohort,Start cohort.,600,"autumn, spring"
+participants,tier,core = core sample; extended = extended sample.,600,"core, extended"
+participants,sex,F / M.,600,"F, M"
+participants,grade,Y1–Y4 = undergraduate year; PG = postgraduate.,600,"PG, Y1, Y2, Y3, Y4"
+participants,age,Age in years.,600,"18, 19, 20, 21, 22, 23, 24, 25"
+participants,bmi,Body mass index.,600,15.5 – 29.7
+participants,smoker,Smoker (0/1).,600,"0, 1"
+participants,family_ses,"Family socioeconomic status, 1–5.",600,"1, 2, 3, 4, 5"
+participants,ctq_total,Childhood Trauma Questionnaire total (minimum 25).,600,27 – 84
+participants,social_support,Social support total.,600,19 – 58
+participants,platform,Phone platform; iOS provides no screen-time features.,600,"android, ios"
+participants,start_date,Enrolment date.,600,ISO date; range not shown
+participants,last_wave_attended,Last wave completed.,600,"0, 1, 2, 3"
+scale_items,pid,Pseudonymous participant identifier.,"2,172",600 distinct
+scale_items,wave,"Wave (0 = T0, 1 = T1 at about 2 months, 2 = T2 at about 4 months, 3 = T3 at about 6 months).","2,172","0, 1, 2, 3"
+scale_items,acad_1,Academic stress item 1.,"2,172","1, 2, 3, 4, 5"
+scale_items,acad_2,Academic stress item 2.,"2,172","1, 2, 3, 4, 5"
+scale_items,acad_3,Academic stress item 3.,"2,172","1, 2, 3, 4, 5"
+scale_items,acad_4,Academic stress item 4.,"2,172","1, 2, 3, 4, 5"
+scale_items,acad_5,Academic stress item 5.,"2,172","1, 2, 3, 4, 5"
+scale_items,emp_1,Employment anxiety item 1.,"2,172","1, 2, 3, 4, 5"
+scale_items,emp_2,Employment anxiety item 2.,"2,172","1, 2, 3, 4, 5"
+scale_items,emp_3,Employment anxiety item 3.,"2,172","1, 2, 3, 4, 5"
+scale_items,emp_4,Employment anxiety item 4.,"2,172","1, 2, 3, 4, 5"
+scale_items,emp_5,Employment anxiety item 5.,"2,172","1, 2, 3, 4, 5"
+scale_items,emp_6,Employment anxiety item 6.,"2,172","1, 2, 3, 4, 5"
+scale_items,inter_1,Interpersonal stress item 1.,"2,172","1, 2, 3, 4, 5"
+scale_items,inter_2,Interpersonal stress item 2.,"2,172","1, 2, 3, 4, 5"
+scale_items,inter_3,Interpersonal stress item 3.,"2,172","1, 2, 3, 4, 5"
+scale_items,inter_4,Interpersonal stress item 4.,"2,172","1, 2, 3, 4, 5"
+scale_items,inter_5,Interpersonal stress item 5.,"2,172","1, 2, 3, 4, 5"
+scale_items,phq_1,PHQ-9 item 1.,"2,172","0, 1, 2, 3"
+scale_items,phq_2,PHQ-9 item 2.,"2,172","0, 1, 2, 3"
+scale_items,phq_3,PHQ-9 item 3.,"2,172","0, 1, 2, 3"
+scale_items,phq_4,PHQ-9 item 4.,"2,172","0, 1, 2, 3"
+scale_items,phq_5,PHQ-9 item 5.,"2,172","0, 1, 2, 3"
+scale_items,phq_6,PHQ-9 item 6.,"2,172","0, 1, 2, 3"
+scale_items,phq_7,PHQ-9 item 7.,"2,172","0, 1, 2, 3"
+scale_items,phq_8,PHQ-9 item 8.,"2,172","0, 1, 2, 3"
+scale_items,phq_9,PHQ-9 item 9.,"2,172","0, 1, 2, 3"
+scale_items,gad_1,GAD-7 item 1.,"2,172","0, 1, 2, 3"
+scale_items,gad_2,GAD-7 item 2.,"2,172","0, 1, 2, 3"
+scale_items,gad_3,GAD-7 item 3.,"2,172","0, 1, 2, 3"
+scale_items,gad_4,GAD-7 item 4.,"2,172","0, 1, 2, 3"
+scale_items,gad_5,GAD-7 item 5.,"2,172","0, 1, 2, 3"
+scale_items,gad_6,GAD-7 item 6.,"2,172","0, 1, 2, 3"
+scale_items,gad_7,GAD-7 item 7.,"2,172","0, 1, 2, 3"
+scale_items,dass_1,DASS-21 stress item 1.,"2,172","0, 1, 2, 3"
+scale_items,dass_2,DASS-21 stress item 2.,"2,172","0, 1, 2, 3"
+scale_items,dass_3,DASS-21 stress item 3.,"2,172","0, 1, 2, 3"
+scale_items,dass_4,DASS-21 stress item 4.,"2,172","0, 1, 2, 3"
+scale_items,dass_5,DASS-21 stress item 5.,"2,172","0, 1, 2, 3"
+scale_items,dass_6,DASS-21 stress item 6.,"2,172","0, 1, 2, 3"
+scale_items,dass_7,DASS-21 stress item 7.,"2,172","0, 1, 2, 3"
+scale_items,sam_1,"Stress appraisal, challenge item 1.","2,172","1, 2, 3, 4, 5"
+scale_items,sam_2,"Stress appraisal, challenge item 2.","2,172","1, 2, 3, 4, 5"
+scale_items,sam_3,"Stress appraisal, challenge item 3.","2,172","1, 2, 3, 4, 5"
+scale_items,sam_4,"Stress appraisal, challenge item 4.","2,172","1, 2, 3, 4, 5"
+scale_items,smm_1,Stress mindset item 1.,"2,172","0, 1, 2, 3, 4"
+scale_items,smm_2,Stress mindset item 2.,"2,172","0, 1, 2, 3, 4"
+scale_items,smm_3,Stress mindset item 3.,"2,172","0, 1, 2, 3, 4"
+scale_items,smm_4,Stress mindset item 4.,"2,172","0, 1, 2, 3, 4"
+scale_items,smm_5,Stress mindset item 5.,"2,172","0, 1, 2, 3, 4"
+scale_items,smm_6,Stress mindset item 6.,"2,172","0, 1, 2, 3, 4"
+scale_items,smm_7,Stress mindset item 7.,"2,172","0, 1, 2, 3, 4"
+scale_items,smm_8,Stress mindset item 8.,"2,172","0, 1, 2, 3, 4"
+scale_items,erq_1,ERQ reappraisal item 1.,"2,172","1, 2, 3, 4, 5, 6, 7"
+scale_items,erq_2,ERQ reappraisal item 2.,"2,172","1, 2, 3, 4, 5, 6, 7"
+scale_items,erq_3,ERQ reappraisal item 3.,"2,172","1, 2, 3, 4, 5, 6, 7"
+scale_items,erq_4,ERQ reappraisal item 4.,"2,172","1, 2, 3, 4, 5, 6, 7"
+scale_items,erq_5,ERQ reappraisal item 5.,"2,172","1, 2, 3, 4, 5, 6, 7"
+scale_items,erq_6,ERQ reappraisal item 6.,"2,172","1, 2, 3, 4, 5, 6, 7"
+scale_items,ders_1,DERS-16 item 1.,"2,172","1, 2, 3, 4, 5"
+scale_items,ders_2,DERS-16 item 2.,"2,172","1, 2, 3, 4, 5"
+scale_items,ders_3,DERS-16 item 3.,"2,172","1, 2, 3, 4, 5"
+scale_items,ders_4,DERS-16 item 4.,"2,172","1, 2, 3, 4, 5"
+scale_items,ders_5,DERS-16 item 5.,"2,172","1, 2, 3, 4, 5"
+scale_items,ders_6,DERS-16 item 6.,"2,172","1, 2, 3, 4, 5"
+scale_items,ders_7,DERS-16 item 7.,"2,172","1, 2, 3, 4, 5"
+scale_items,ders_8,DERS-16 item 8.,"2,172","1, 2, 3, 4, 5"
+scale_items,ders_9,DERS-16 item 9.,"2,172","1, 2, 3, 4, 5"
+scale_items,ders_10,DERS-16 item 10.,"2,172","1, 2, 3, 4, 5"
+scale_items,ders_11,DERS-16 item 11.,"2,172","1, 2, 3, 4, 5"
+scale_items,ders_12,DERS-16 item 12.,"2,172","1, 2, 3, 4, 5"
+scale_items,ders_13,DERS-16 item 13.,"2,172","1, 2, 3, 4, 5"
+scale_items,ders_14,DERS-16 item 14.,"2,172","1, 2, 3, 4, 5"
+scale_items,ders_15,DERS-16 item 15.,"2,172","1, 2, 3, 4, 5"
+scale_items,ders_16,DERS-16 item 16.,"2,172","1, 2, 3, 4, 5"
+scale_items,psqi_total,Pittsburgh Sleep Quality Index total.,"2,172",0 – 14
+scale_items,caffeine_cups_day,"Caffeine, cups per day.","2,172",0 – 6
+scale_items,exercise_hours_week,"Exercise, hours per week.","2,172",0 – 9.5
+scale_scores,pid,Pseudonymous participant identifier.,"2,172",600 distinct
+scale_scores,wave,"Wave (0 = T0, 1 = T1 at about 2 months, 2 = T2 at about 4 months, 3 = T3 at about 6 months).","2,172","0, 1, 2, 3"
+scale_scores,visit_date,Date of the laboratory or questionnaire visit.,"2,172",ISO date; range not shown
+scale_scores,days_to_next_final,Days to the next final examination (time-varying covariate).,"2,172",19 – 181
+scale_scores,psqi_total,Pittsburgh Sleep Quality Index total.,"2,172",0 – 14
+scale_scores,caffeine_cups_day,"Caffeine, cups per day.","2,172",0 – 6
+scale_scores,exercise_hours_week,"Exercise, hours per week.","2,172",0 – 9.5
+scale_scores,academic_stress,"Academic stress item mean, 1–5.","2,172",1 – 5
+scale_scores,employment_anxiety,"Employment anxiety item mean, 1–5.","2,172",1 – 5
+scale_scores,interpersonal_stress,"Interpersonal stress item mean, 1–5.","2,172",1 – 5
+scale_scores,phq9_total,PHQ-9 total.,"2,172",0 – 27
+scale_scores,gad7_total,GAD-7 total.,"2,172",0 – 21
+scale_scores,dass_stress,DASS-21 stress subscale (×2).,"2,172",0 – 42
+scale_scores,sam_challenge,"Stress appraisal, challenge item mean.","2,172",1 – 5
+scale_scores,stress_mindset,Stress mindset item mean.,"2,172",0 – 4
+scale_scores,erq_reappraisal,ERQ reappraisal item mean.,"2,172",1.167 – 7
+scale_scores,ders16_total,DERS-16 total.,"2,172",16 – 80
+scale_scores,therapy_use,"Receiving psychological treatment or referral, including self-referral (0/1).","2,172","0, 1"
+scale_scores,safety_contact,"Safety contact at or before this wave (0/1), recorded separately from treatment.","2,172","0, 1"
+clinician_assessment,pid,Pseudonymous participant identifier.,"2,172",600 distinct
+clinician_assessment,wave,"Wave (0 = T0, 1 = T1 at about 2 months, 2 = T2 at about 4 months, 3 = T3 at about 6 months).","2,172","0, 1, 2, 3"
+clinician_assessment,cgi_s,"Clinical Global Impression severity, 1–7 (clinician, blind to device data).","2,172","1, 2, 3, 4, 5, 6"
+clinician_assessment,cssrs_passive_ideation,C-SSRS passive ideation.,"2,172","0, 1"
+clinician_assessment,cssrs_active_ideation,C-SSRS active ideation.,"2,172","0, 1"
+clinician_assessment,cssrs_intensity,"C-SSRS ideation intensity, 0–25.","2,172",0 – 18
+clinician_assessment,cssrs_behavior,C-SSRS behaviour.,"2,172","0, 1"
+clinician_assessment,rater_id,Clinician rater identifier.,"2,172","R1, R2, R3, R4, R5, R6"
+ecg_lab,pid,Pseudonymous participant identifier.,"1,625",600 distinct
+ecg_lab,wave,"Wave (0 = T0, 1 = T1 at about 2 months, 2 = T2 at about 4 months, 3 = T3 at about 6 months).","1,625","0, 1, 2, 3"
+ecg_lab,tier,core = core sample; extended = extended sample.,"1,625","core, extended"
+ecg_lab,sampling_rate_hz,Sampling rate (Hz).,"1,625",1000
+ecg_lab,test_hour,Time of test (hour of day).,"1,625",14 – 18
+ecg_lab,rest_hr_bpm,Resting heart rate (beats/min).,"1,625",47 – 104.9
+ecg_lab,rmssd_ms,Resting RMSSD (ms).,"1,552",7.09 – 157.47
+ecg_lab,ln_rmssd,Resting lnRMSSD.,"1,552",1.9586 – 5.0592
+ecg_lab,hf_power_ms2,High-frequency power (ms²).,"1,552",32.6 – 9009.4
+ecg_lab,ln_rmssd_task,lnRMSSD during the task.,"1,553",1.4194 – 4.9323
+ecg_lab,ln_rmssd_recovery,lnRMSSD during recovery.,"1,551",1.8893 – 5.006
+ecg_lab,corrected_beats_pct,"Corrected beats, % (above 5 set to missing).","1,625",0 – 27.14
+ecg_lab,resp_rate_bpm,Respiration rate (breaths/min).,"1,625",7.9 – 22.5
+ecg_lab,sync_source,"Sync signal aligning ECG with the task log (marker, offset or none).","1,625",marker
+eeg_lab,pid,Pseudonymous participant identifier.,"1,072",300 distinct
+eeg_lab,wave,"Wave (0 = T0, 1 = T1 at about 2 months, 2 = T2 at about 4 months, 3 = T3 at about 6 months).","1,072","0, 1, 2, 3"
+eeg_lab,clean_seconds,"Clean eyes-closed data, s (below 180 set to missing).","1,072",100 – 240
+eeg_lab,n_channels_recorded,Channels recorded.,"1,072",32
+eeg_lab,sampling_rate_hz,Sampling rate (Hz).,"1,072",1000
+eeg_lab,n_channels_interpolated,Channels interpolated.,"1,072","0, 1, 2, 3, 4"
+eeg_lab,data_loss_pct,"Eyes-closed data lost, %.","1,072",0 – 8.85
+eeg_lab,alpha_periodic_log,Aperiodic-adjusted alpha peak height (log).,"1,035",0 – 2.0894
+eeg_lab,alpha_total_log,Unadjusted alpha power (log).,"1,035",-0.721 – 1.5295
+eeg_lab,aperiodic_exponent,Aperiodic exponent.,"1,035",0.9258 – 2.1225
+eeg_lab,iapf_hz,Individual alpha peak frequency (Hz).,"1,031",8.1196 – 12.9291
+eeg_lab,faa_f4_f3,"Frontal alpha asymmetry, F4 − F3.","1,035",-3.1023 – 1.0425
+eeg_lab,alpha_periodic_log_eo,"Posterior alpha peak height, eyes open (log).","1,035",0 – 1.6681
+eeg_lab,fit_r2,Goodness of fit of the spectral parameterization.,"1,035",0.9959 – 0.9998
+eeg_lab,median_impedance_kohm,Median electrode impedance (kΩ).,"1,072",2 – 30
+eeg_lab,n_ica_removed,Independent components removed.,"1,072","1, 2, 3"
+eeg_channel_level,pid,Pseudonymous participant identifier.,"68,310",300 distinct
+eeg_channel_level,wave,"Wave (0 = T0, 1 = T1 at about 2 months, 2 = T2 at about 4 months, 3 = T3 at about 6 months).","68,310","0, 1, 2, 3"
+eeg_channel_level,condition,eyes_closed / eyes_open.,"68,310","eyes_closed, eyes_open"
+eeg_channel_level,channel,"Electrode name, including recovered FCz.","68,310",33 distinct
+eeg_channel_level,alpha_periodic_log,Aperiodic-adjusted alpha peak height (log).,"68,310",0 – 2.2641
+eeg_channel_level,alpha_total_log,Unadjusted alpha power (log).,"68,310",-2.7074 – 1.7126
+eeg_channel_level,aperiodic_exponent,Aperiodic exponent.,"68,310",0.436 – 2.3321
+eeg_channel_level,aperiodic_offset,Aperiodic offset.,"68,310",-1.7808 – 2.0013
+eeg_channel_level,iapf_hz,Individual alpha peak frequency (Hz).,"67,948",8.0003 – 13
+eeg_channel_level,alpha_bandwidth_hz,Alpha peak bandwidth (Hz).,"67,948",1 – 8
+eeg_channel_level,fit_r2,Goodness of fit of the spectral parameterization.,"68,310",0.9259 – 0.9994
+eeg_channel_level,impedance_kohm,Electrode impedance (kΩ; blank for FCz).,"66,240",1 – 30
+eeg_channel_level,interpolated,Bad channel interpolated (0/1).,"68,310","0, 1"
+wearable_nightly,pid,Pseudonymous participant identifier.,"30,408",600 distinct
+wearable_nightly,wave,"Wave (0 = T0, 1 = T1 at about 2 months, 2 = T2 at about 4 months, 3 = T3 at about 6 months).","30,408","0, 1, 2, 3"
+wearable_nightly,burst_day,Day within the burst (1–14).,"30,408",1 – 14
+wearable_nightly,date,Calendar date.,"30,408",ISO date; range not shown
+wearable_nightly,night_rmssd_ms,Ring nocturnal RMSSD (ms).,"20,956",5.26 – 222
+wearable_nightly,ln_night_rmssd,Ring nocturnal lnRMSSD.,"20,956",1.6601 – 5.4027
+wearable_nightly,night_hr_bpm,Nocturnal heart rate (beats/min).,"20,956",43 – 78.7
+wearable_nightly,sleep_minutes,Sleep (min).,"20,956",247 – 632
+wearable_nightly,valid_night,Valid night (0/1).,"30,408","0, 1"
+overnight_device_agreement,pid,Pseudonymous participant identifier.,148,37 distinct
+overnight_device_agreement,wave,"Wave (0 = T0, 1 = T1 at about 2 months, 2 = T2 at about 4 months, 3 = T3 at about 6 months).",148,"0, 3"
+overnight_device_agreement,burst_day,Day within the burst (1–14).,148,1 – 14
+overnight_device_agreement,h10_night_rmssd_ms,Polar H10 RMSSD on the same night (ms).,148,14.07 – 98.49
+overnight_device_agreement,ring_night_rmssd_ms,Ring RMSSD on the same night (ms).,148,14.54 – 90.74
+overnight_device_agreement,h10_corrected_beats_pct,"H10 corrected beats, %.",148,"0, 0.01, 0.02, 0.03, 0.05, 0.23, 0.74, 1.78"
+ema_prompts,pid,Pseudonymous participant identifier.,"91,224",600 distinct
+ema_prompts,wave,"Wave (0 = T0, 1 = T1 at about 2 months, 2 = T2 at about 4 months, 3 = T3 at about 6 months).","91,224","0, 1, 2, 3"
+ema_prompts,burst_day,Day within the burst (1–14).,"91,224",1 – 14
+ema_prompts,prompt,Prompt number within the day.,"91,224","1, 2, 3"
+ema_prompts,date,Calendar date.,"91,224",ISO date; range not shown
+ema_prompts,answered,Prompt answered (0/1).,"91,224","0, 1"
+ema_prompts,stress,"Momentary stress, 1–7.","58,468","1, 2, 3, 4, 5, 6, 7"
+ema_prompts,neg_affect,"Negative affect, 1–7.","58,468","1, 2, 3, 4, 5, 6"
+ema_prompts,pos_affect,"Positive affect, 1–7.","58,468","1, 2, 3, 4, 5, 6, 7"
+ema_prompts,ideation_item,"Momentary ideation item, 0–6.","58,468","0, 1, 2, 3, 4"
+passive_daily,pid,Pseudonymous participant identifier.,"30,408",600 distinct
+passive_daily,wave,"Wave (0 = T0, 1 = T1 at about 2 months, 2 = T2 at about 4 months, 3 = T3 at about 6 months).","30,408","0, 1, 2, 3"
+passive_daily,burst_day,Day within the burst (1–14).,"30,408",1 – 14
+passive_daily,date,Calendar date.,"30,408",ISO date; range not shown
+passive_daily,screen_minutes,Screen time (min; blank on iOS or days without data).,"22,798",0 – 815
+passive_daily,night_screen_minutes,Night-time screen use (min).,"22,798",0 – 173
+passive_daily,steps,Steps.,"22,798",300 – 19496
+passive_daily,home_hours,Hours at home.,"22,798",6 – 24
+passive_daily,location_entropy,Location entropy.,"22,798",-0 – 3.181
+passive_daily,exam_day,Examination on that day (0/1).,"30,408","0, 1"
+academic_job_logs,pid,Pseudonymous participant identifier.,"17,376",600 distinct
+academic_job_logs,wave,"Wave (0 = T0, 1 = T1 at about 2 months, 2 = T2 at about 4 months, 3 = T3 at about 6 months).","17,376","0, 1, 2, 3"
+academic_job_logs,week,Week within the wave.,"17,376","1, 2, 3, 4, 5, 6, 7, 8"
+academic_job_logs,deadlines_due,Deadlines due.,"17,376",0 – 11
+academic_job_logs,exams_scheduled,Examinations scheduled.,"17,376","0, 1, 2, 3, 4, 5, 6, 7"
+academic_job_logs,hours_before_deadline,Hours between submission and deadline.,"17,376",-20.7 – 53.1
+academic_job_logs,job_applications,Job applications submitted.,"17,376",0 – 8
+academic_job_logs,lms_logins,Learning-platform logins.,"17,376",0 – 19
+safety_events,pid,Pseudonymous participant identifier.,540,328 distinct
+safety_events,wave,"Wave (0 = T0, 1 = T1 at about 2 months, 2 = T2 at about 4 months, 3 = T3 at about 6 months).",540,"0, 1, 2, 3"
+safety_events,trigger_source,"Risk trigger: phq9_item9, cssrs or ema_ideation.",540,"cssrs, ema_ideation, phq9_item9"
+safety_events,risk_level,"Risk level: low, moderate or high.",540,"high, low, moderate"
+safety_events,contacted,Contacted (0/1).,540,1
+safety_events,referred_external,Referred outside the university (0/1).,540,"0, 1"
+safety_events,response_hours,Response time (h).,540,0.5 – 24

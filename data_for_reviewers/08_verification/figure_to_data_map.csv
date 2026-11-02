@@ -1,0 +1,30 @@
+﻿Panel,Content,Data file,Note
+Fig. 1a,Timeline of the four waves,"Study schematic, no data",
+Fig. 1b,Measures and schedule,"Study schematic, no data",
+Fig. 1c,Flow from screening to the final wave,01_participants/enrolment_flow.csv; 01_participants/retention_by_wave.csv,
+Fig. 1d,Hypothesized pathway,"Study schematic, no data",
+Fig. 1e,"Valid sessions, nights, person-days and prompts",02_descriptives_and_quality/data_quality.csv,
+Fig. 2a,"Standardized lags, main RI-CLPM",03_within_person_panel/riclpm_nine_paths.csv,
+Fig. 2b,All nine lags with 95% CIs,03_within_person_panel/riclpm_nine_paths.csv,
+Fig. 2c,Traditional model vs RI-CLPM,03_within_person_panel/lagged_paths_by_model.csv,Standardized 95% CIs are in the journal Source Data file (sheet Fig 2c).
+Fig. 2d,Between-person and within-person correlations,03_within_person_panel/between_within_correlations.csv,
+Fig. 3a,Indirect effect across specifications,03_within_person_panel/indirect_effect_robustness.csv,
+Fig. 3b,Simple slopes by appraisal,03_within_person_panel/moderation_simple_slopes.csv; 03_within_person_panel/moderation_tests.csv,"Wald 95% CIs derived from each slope and its exact P are in the journal Source Data file (sheet Fig 3b,c)."
+Fig. 3c,Simple slopes by emotion regulation,03_within_person_panel/moderation_simple_slopes.csv; 03_within_person_panel/moderation_tests.csv,"Wald 95% CIs derived from each slope and its exact P are in the journal Source Data file (sheet Fig 3b,c)."
+Fig. 4a,Daily stress and that night's lnRMSSD,04_daily_bursts_and_devices/daily_coupling_bins.csv; 04_daily_bursts_and_devices/daily_multilevel_models.csv,
+Fig. 4b,Nocturnal lnRMSSD and next-day negative affect,04_daily_bursts_and_devices/daily_coupling_bins.csv; 04_daily_bursts_and_devices/daily_multilevel_models.csv,
+Fig. 4c,"Bland–Altman, ring vs Polar H10",04_daily_bursts_and_devices/device_agreement.csv,"Individual pairs are in the journal Source Data file, not in this package; summary statistics are in the listed file."
+Fig. 4d,"Bland–Altman, ring vs laboratory",04_daily_bursts_and_devices/device_agreement.csv,"Individual pairs are in the journal Source Data file, not in this package; summary statistics are in the listed file."
+Fig. 4e,Daily paths from the DSEM,04_daily_bursts_and_devices/dsem_parameters.csv,
+Fig. 5a,BIC of the profile solutions,05_profiles_and_states/lpa_fit.csv,
+Fig. 5b,Crisis score by profile,05_profiles_and_states/profile_crisis_by_wave.csv,
+Fig. 5c,Bias-corrected means by profile,05_profiles_and_states/bch_means.csv; 05_profiles_and_states/bch_contrasts.csv,
+Fig. 5d,BIC of the transition models,05_profiles_and_states/rilta_fit.csv,
+Fig. 5e,Transition probabilities,05_profiles_and_states/rilta_transitions.csv,
+Fig. 5f,State prevalence by wave,05_profiles_and_states/rilta_prevalence.csv,
+Fig. 6a,Change in AUC,06_prediction/prediction_performance.csv,
+Fig. 6b,Calibration in deciles,06_prediction/calibration_deciles.csv,Recomputed with the stored analysis design; the slope and intercept reproduce the stored output.
+Fig. 6c,Net benefit,06_prediction/net_benefit.csv,
+Fig. 6d,Mean absolute Shapley values,06_prediction/feature_contributions.csv,
+Table 1,Baseline characteristics,01_participants/participant_characteristics.csv,
+Table 2,Confirmatory tests,03_within_person_panel/confirmatory_tests.csv,

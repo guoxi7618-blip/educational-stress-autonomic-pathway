@@ -1,0 +1,5 @@
+﻿Check,n,Value,Statistic
+Task minus rest lnRMSSD,"1,543",-0.279,"t(1,542) = -59.0"
+Recovery minus rest lnRMSSD,"1,546",-0.058,"t(1,545) = -18.7"
+"Eyes-open / eyes-closed alpha peak height, posterior channels","8,280",0.59,
+"Aperiodic exponent, M (SD)","1,035",1.55 (0.19),

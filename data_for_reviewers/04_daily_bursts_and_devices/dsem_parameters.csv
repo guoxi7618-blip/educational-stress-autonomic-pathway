@@ -1,0 +1,22 @@
+﻿Block,Parameter,Standardized median,95% CrI,Posterior probability of direction,Unstandardized median,R-hat,Effective sample size
+Same-day and focal paths,Daily stress to that night's lnRMSSD,-0.1001,"[-0.1166, -0.0844]",1.0000,-0.0197,0.9998,"4,055"
+Same-day and focal paths,Nocturnal lnRMSSD to next-day negative affect,-0.0276,"[-0.0438, -0.0117]",1.0000,-0.1149,0.9996,"3,476"
+Same-day and focal paths,Daily negative affect to that night's lnRMSSD,-0.0298,"[-0.0468, -0.0137]",1.0000,-0.0072,1.0001,"4,132"
+Same-day and focal paths,Product of the two focal daily steps,0.0027,"[0.0012, 0.0045]",1.0000,0.0022,0.9998,"2,947"
+Lagged paths,Stress (day t − 1) to Stress (day t),0.1703,"[0.1558, 0.1852]",1.0000,0.1703,1.0002,"3,010"
+Lagged paths,Negative affect (day t − 1) to Stress (day t),0.0248,"[0.0100, 0.0390]",0.9992,0.0303,0.9995,"3,273"
+Lagged paths,Nocturnal lnRMSSD (day t − 1) to Stress (day t),-0.0306,"[-0.0459, -0.0154]",1.0000,-0.1551,1.0001,"3,263"
+Lagged paths,Stress (day t − 1) to Negative affect (day t),0.0593,"[0.0442, 0.0737]",1.0000,0.0486,0.9996,"3,455"
+Lagged paths,Negative affect (day t − 1) to Negative affect (day t),0.0877,"[0.0720, 0.1027]",1.0000,0.0877,0.9999,"2,994"
+Lagged paths,Stress (day t − 1) to Nocturnal lnRMSSD (day t),0.0128,"[-0.0046, 0.0293]",0.9288,0.0025,0.9997,"3,437"
+Lagged paths,Negative affect (day t − 1) to Nocturnal lnRMSSD (day t),0.0033,"[-0.0128, 0.0199]",0.6538,0.0008,0.9994,"4,211"
+Lagged paths,Nocturnal lnRMSSD (day t − 1) to Nocturnal lnRMSSD (day t),0.3183,"[0.3020, 0.3356]",1.0000,0.3183,1.0011,"2,267"
+Random slopes,Between-person SD of the stress–lnRMSSD slope,0.0136,"[0.0007, 0.0424]",1.0000,0.0136,1.0051,"1,019"
+Random slopes,Between-person SD of the lnRMSSD–negative affect slope,0.0155,"[0.0008, 0.0465]",1.0000,0.0155,1.0022,586
+Residual,Stress–negative affect residual correlation,0.4171,"[0.4072, 0.4268]",1.0000,0.4171,0.9999,"3,972"
+Between persons,"Person-mean correlation, stress–negative affect",0.3503,"[0.2516, 0.4368]",1.0000,0.3503,,
+Between persons,"Person-mean correlation, stress–nocturnal lnRMSSD",-0.1350,"[-0.2378, -0.0343]",0.9955,-0.1350,,
+Between persons,"Person-mean correlation, negative affect–nocturnal lnRMSSD",-0.2397,"[-0.3391, -0.1354]",1.0000,-0.2397,,
+Variance decomposition,"Between-person share of variance, stress",0.5988,"[0.5549, 0.6409]",1.0000,0.5988,,
+Variance decomposition,"Between-person share of variance, negative affect",0.5516,"[0.5063, 0.5944]",1.0000,0.5516,,
+Variance decomposition,"Between-person share of variance, nocturnal lnRMSSD",0.5344,"[0.4903, 0.5756]",1.0000,0.5344,,

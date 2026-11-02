@@ -1,0 +1,8 @@
+﻿Indicator,Numerator,Denominator,%
+Laboratory ECG sessions meeting the artefact criterion,"1,552","1,625",95.5
+EEG sessions with at least 180 s of clean eyes-closed data,"1,035","1,072",96.5
+Scheduled nights with a valid ring recording,"20,956","30,408",68.9
+"Bursts with at least 5 valid nights, among bursts with at least 1 valid night","2,018","2,100",96.1
+"Bursts with at least 5 valid nights, among all scheduled bursts","2,018","2,172",92.9
+Person-days with step data,"22,798","30,408",75.0
+Momentary prompts answered,"58,468","91,224",64.1

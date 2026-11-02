@@ -1,0 +1,3 @@
+﻿Comparison,Scaled difference in chi-square,df difference,P
+Free vs constrained RI-CLPM,36.8,30,0.182
+RI-CLPM vs traditional cross-lagged model,122.3,6,< 0.001

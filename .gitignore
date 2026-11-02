@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.Rhistory
+figures/panels/
+figures/*.png
+figures/*.pptx
+# Record-level and raw data stay under controlled access
+data2/
+*.acq
+*.vhdr
+*.eeg
+*.vmrk

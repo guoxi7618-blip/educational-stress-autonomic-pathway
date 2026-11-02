@@ -1,0 +1,13 @@
+﻿Quantity,Value
+Students,600
+Bursts,"2,172"
+Days per burst,14
+Chains,4
+Warm-up draws per chain,"1,000"
+Retained draws per chain,"1,000"
+Divergent transitions,0
+"Largest R-hat, structural parameters",1.005
+"Smallest effective sample size, structural parameters",586
+"Observed share of days, stress",0.929
+"Observed share of days, negative affect",0.929
+"Observed share of nights, lnRMSSD",0.689

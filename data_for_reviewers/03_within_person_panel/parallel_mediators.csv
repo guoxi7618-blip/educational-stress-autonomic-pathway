@@ -1,0 +1,4 @@
+﻿Quantity,Estimate,95% CI
+Indirect effect through lnRMSSD,0.014,"[-0.007, 0.045]"
+Indirect effect through alpha,0.064,"[0.019, 0.123]"
+Difference,0.050,"[-0.006, 0.115]"

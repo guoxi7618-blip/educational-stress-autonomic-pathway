@@ -1,0 +1,4 @@
+﻿Comparison,Pairs,r,Concordance,"ICC(2,1)",Bias,Limits of agreement,Proportional slope
+"Ring vs Polar H10, same night (ln RMSSD)",148,0.981,0.978,0.978,0.008,"[-0.159, 0.175]",-0.072
+Ring burst mean vs resting laboratory lnRMSSD,"1,455",0.804,0.782,0.782,-0.093,"[-0.695, 0.510]",-0.154
+Ring burst mean vs task-period laboratory lnRMSSD,"1,446",0.758,0.694,0.694,0.188,"[-0.511, 0.887]",-0.222

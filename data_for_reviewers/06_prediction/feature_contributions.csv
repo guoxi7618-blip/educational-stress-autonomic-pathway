@@ -1,0 +1,28 @@
+﻿Feature,Mean absolute Shapley value,Coefficient
+PHQ-9,0.3968,0.4943
+DASS-21 stress,0.3342,0.4134
+GAD-7,0.2677,0.3289
+Location entropy,0.2119,-0.2647
+Night-time screen use,0.1897,0.2218
+Steps,0.1518,-0.1871
+Time at home,0.1458,0.1816
+Nocturnal ring lnRMSSD,0.1164,-0.1519
+Challenge appraisal,0.1148,-0.1406
+Academic stress,0.0847,0.1039
+Task lnRMSSD,0.0669,-0.1037
+Momentary negative affect,0.0641,0.0804
+DERS-16,0.0638,0.0775
+Interpersonal stress,0.0513,0.0638
+Age,0.0508,-0.0631
+Screen time,0.0421,-0.0473
+ERQ reappraisal,0.0415,0.0515
+Employment anxiety,0.0351,0.0428
+Female sex,0.0248,-0.0251
+Recovery lnRMSSD,0.0191,0.0298
+Momentary ideation item,0.0157,-0.0359
+Resting lnRMSSD,0.0124,-0.0192
+PSQI,0.0123,-0.0154
+Momentary stress,0.0084,0.0105
+SD of momentary negative affect,0.0082,0.0105
+Childhood trauma,0.0054,-0.0073
+Stress mindset,0.0044,-0.0055

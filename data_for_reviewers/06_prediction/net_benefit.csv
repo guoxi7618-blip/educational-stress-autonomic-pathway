@@ -1,0 +1,51 @@
+﻿Population,Model,Risk threshold,Net benefit,Net benefit of contacting all
+All transitions,Self-report,0.1,0.3177,0.3115
+All transitions,Self-report,0.2,0.2544,0.2255
+All transitions,Self-report,0.3,0.2092,0.1148
+All transitions,Self-report,0.4,0.1686,-0.0327
+All transitions,Self-report,0.5,0.1326,-0.2393
+All transitions,Self-report + physiology,0.1,0.3148,0.3115
+All transitions,Self-report + physiology,0.2,0.2588,0.2255
+All transitions,Self-report + physiology,0.3,0.2107,0.1148
+All transitions,Self-report + physiology,0.4,0.1756,-0.0327
+All transitions,Self-report + physiology,0.5,0.1261,-0.2393
+All transitions,Self-report + passive sensing,0.1,0.3159,0.3115
+All transitions,Self-report + passive sensing,0.2,0.2596,0.2255
+All transitions,Self-report + passive sensing,0.3,0.2173,0.1148
+All transitions,Self-report + passive sensing,0.4,0.1849,-0.0327
+All transitions,Self-report + passive sensing,0.5,0.1599,-0.2393
+All transitions,Self-report + momentary assessment,0.1,0.3172,0.3115
+All transitions,Self-report + momentary assessment,0.2,0.2544,0.2255
+All transitions,Self-report + momentary assessment,0.3,0.2082,0.1148
+All transitions,Self-report + momentary assessment,0.4,0.1662,-0.0327
+All transitions,Self-report + momentary assessment,0.5,0.1300,-0.2393
+All transitions,All features,0.1,0.3132,0.3115
+All transitions,All features,0.2,0.2606,0.2255
+All transitions,All features,0.3,0.2157,0.1148
+All transitions,All features,0.4,0.1801,-0.0327
+All transitions,All features,0.5,0.1541,-0.2393
+New onset,Self-report,0.1,0.1441,0.1343
+New onset,Self-report,0.2,0.0662,0.0261
+New onset,Self-report,0.3,0.0291,-0.1130
+New onset,Self-report,0.4,-0.0013,-0.2985
+New onset,Self-report,0.5,-0.0050,-0.5582
+New onset,Self-report + physiology,0.1,0.1389,0.1343
+New onset,Self-report + physiology,0.2,0.0667,0.0261
+New onset,Self-report + physiology,0.3,0.0327,-0.1130
+New onset,Self-report + physiology,0.4,-0.0020,-0.2985
+New onset,Self-report + physiology,0.5,-0.0060,-0.5582
+New onset,Self-report + passive sensing,0.1,0.1421,0.1343
+New onset,Self-report + passive sensing,0.2,0.0734,0.0261
+New onset,Self-report + passive sensing,0.3,0.0365,-0.1130
+New onset,Self-report + passive sensing,0.4,0.0182,-0.2985
+New onset,Self-report + passive sensing,0.5,0.0189,-0.5582
+New onset,Self-report + momentary assessment,0.1,0.1439,0.1343
+New onset,Self-report + momentary assessment,0.2,0.0649,0.0261
+New onset,Self-report + momentary assessment,0.3,0.0291,-0.1130
+New onset,Self-report + momentary assessment,0.4,0.0027,-0.2985
+New onset,Self-report + momentary assessment,0.5,-0.0119,-0.5582
+New onset,All features,0.1,0.1396,0.1343
+New onset,All features,0.2,0.0697,0.0261
+New onset,All features,0.3,0.0330,-0.1130
+New onset,All features,0.4,0.0159,-0.2985
+New onset,All features,0.5,0.0119,-0.5582
